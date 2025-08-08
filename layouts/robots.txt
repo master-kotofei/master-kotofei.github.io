@@ -1,11 +1,7 @@
 User-agent: *
 Allow: /
 
-# Запрещаем черновики, страницы пагинации и служебные директории
 Disallow: /drafts/
 Disallow: /page/
 Disallow: /tags/
 Disallow: /categories/
-
-# Sitemap (берём адрес из baseURL)
-https://vpn-guru.github.io/sitemap.xml
