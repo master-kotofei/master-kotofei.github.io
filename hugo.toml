@@ -7,7 +7,7 @@ theme = "hugo-PaperMod"
   pagerSize = 10
   
 # Включаем robots.txt
-enableRobotsTXT = true
+# enableRobotsTXT = true
 
 # Настройки sitemap
 [sitemap]
