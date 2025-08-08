@@ -17,6 +17,3 @@ enableRobotsTXT = true
 
 [params]
   defaultTheme = "auto"
-
-[outputs]
-  home = ["HTML", "RSS", "JSON", "RobotsTXT"]
