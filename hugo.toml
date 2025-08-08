@@ -17,11 +17,11 @@ theme = "hugo-PaperMod"
 
 [params]
   defaultTheme = "auto"
-  ShowShareButtons = true
+  ShowShareButtons = false
   ShowReadingTime = true
   ShowWordCount = true
   ShowToc = true
   TocOpen = false
-  ShowBreadCrumbs = true
+  ShowBreadCrumbs = false
   ShowPostNavLinks = true
   author = ["vpnguru"]
