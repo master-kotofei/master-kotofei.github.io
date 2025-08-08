@@ -3,8 +3,20 @@ languageCode = "ru"
 title = "VPN Guru"
 theme = "hugo-PaperMod"
 
+# Включаем robots.txt
+enableRobotsTXT = true
+
+# Настройки sitemap
+[sitemap]
+  changefreq = "daily"
+  priority = 0.5
+  filename = "sitemap.xml"
+
 [params]
   defaultTheme = "auto"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[pagination]
+  pagerSize = 10
