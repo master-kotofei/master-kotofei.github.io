@@ -8,4 +8,4 @@ Disallow: /tags/
 Disallow: /categories/
 
 # Sitemap (берём адрес из baseURL)
-Sitemap: {{ .Site.BaseURL }}sitemap.xml
+https://vpn-guru.github.io/sitemap.xml
