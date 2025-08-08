@@ -1,0 +1,10 @@
+baseURL = "/"
+languageCode = "ru"
+title = "VPN Guru"
+theme = "hugo-PaperMod"
+
+[params]
+  defaultTheme = "auto"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
