@@ -16,12 +16,17 @@ theme = "hugo-PaperMod"
   filename = "sitemap.xml"
 
 [params]
+  subtitle = 'Лучший блог о ВПН'
   defaultTheme = "auto"
   ShowShareButtons = false
   ShowReadingTime = true
-  ShowWordCount = true
+  ShowWordCount = false
   ShowToc = true
   TocOpen = false
   ShowBreadCrumbs = false
   ShowPostNavLinks = true
   author = ["vpnguru"]
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-ZXWCMEHEJC'
