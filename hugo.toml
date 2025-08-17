@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "ru"
 title = "VPN Guru"
-theme = "hugo-PaperMod"
+theme = "vpn-guru-theme"
 
 [pagination]
   pagerSize = 10
@@ -17,7 +17,6 @@ theme = "hugo-PaperMod"
 
 [params]
   subtitle = 'Лучший блог о ВПН'
-  defaultTheme = "auto"
   ShowShareButtons = false
   ShowReadingTime = true
   ShowWordCount = false

@@ -1,0 +1,54 @@
+{{ define "main" }}
+<div class="container">
+    <header class="page-header">
+        <h1 class="site-title">{{ .Site.Title }}</h1>
+        <p class="site-subtitle">{{ .Site.Params.subtitle }}</p>
+    </header>
+    
+    <div class="posts-grid">
+        {{ range .Paginator.Pages }}
+        <article class="post-card">
+            <div class="post-meta">
+                <time class="post-date">{{ .Date.Format "02.01.2006" }}</time>
+                {{ if .Params.tags }}
+                <div class="post-tags">
+                    {{ range .Params.tags }}
+                    <span class="tag">{{ . }}</span>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+            
+            <h2 class="post-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            
+            <div class="post-excerpt">
+                {{ .Summary | default .Content | truncate 200 }}
+            </div>
+            
+            <div class="post-footer">
+                <a href="{{ .RelPermalink }}" class="read-more">Читать далее →</a>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+    
+    <!-- Pagination -->
+    {{ if gt .Paginator.TotalPages 1 }}
+    <nav class="pagination">
+        {{ if .Paginator.HasPrev }}
+        <a href="{{ .Paginator.Prev.URL }}" class="pagination-prev">← Предыдущая</a>
+        {{ end }}
+        
+        <span class="pagination-info">
+            Страница {{ .Paginator.PageNumber }} из {{ .Paginator.TotalPages }}
+        </span>
+        
+        {{ if .Paginator.HasNext }}
+        <a href="{{ .Paginator.Next.URL }}" class="pagination-next">Следующая →</a>
+        {{ end }}
+    </nav>
+    {{ end }}
+</div>
+{{ end }}
