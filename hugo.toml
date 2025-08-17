@@ -30,3 +30,4 @@ theme = "hugo-PaperMod"
 [services]
   [services.googleAnalytics]
     ID = 'G-ZXWCMEHEJC'
+
