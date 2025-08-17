@@ -23,6 +23,16 @@
             </div>
         </header>
         
+        <!-- Post Summary -->
+        {{ if .Summary }}
+        <div class="post-summary-box">
+            <div class="post-summary-content">
+                <h3 class="post-summary-title">Краткое содержание</h3>
+                <p class="post-summary-text">{{ .Summary | plainify }}</p>
+            </div>
+        </div>
+        {{ end }}
+        
         <!-- Post Content -->
         <div class="post-content">
             {{ .Content }}

@@ -312,6 +312,44 @@ body {
     flex-wrap: wrap;
 }
 
+/* Post Summary Box */
+.post-summary-box {
+    margin: 2rem 0 1.5rem 0;
+    padding: 0;
+    border: 2px solid #e3f2fd;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f8fafc, #e8f4fd);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.1);
+}
+
+.post-summary-content {
+    padding: 1.5rem;
+}
+
+.post-summary-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1976d2;
+    margin: 0 0 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.post-summary-title::before {
+    content: "📋";
+    font-size: 1.2rem;
+}
+
+.post-summary-text {
+    color: #424242;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1rem;
+    text-align: justify;
+}
+
 .post-header .tag {
     background: linear-gradient(135deg, #e0f2fe, #b3e5fc);
     color: #0277bd;
@@ -396,6 +434,16 @@ body {
 .post-content pre code {
     background: none;
     padding: 0;
+}
+
+/* Center images in posts */
+.post-content img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Breadcrumbs */
