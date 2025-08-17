@@ -8,27 +8,26 @@
     <div class="posts-grid">
         {{ range .Paginator.Pages }}
         <article class="post-card">
-            <div class="post-meta">
-                <time class="post-date">{{ .Date.Format "02.01.2006" }}</time>
-                {{ if .Params.tags }}
-                <div class="post-tags">
-                    {{ range .Params.tags }}
-                    <span class="tag">{{ . }}</span>
+            <div class="post-card-content">
+                <div class="post-meta">
+                    <time class="post-date">{{ .Date.Format "02.01.2006" }}</time>
+                </div>
+                
+                <h2 class="post-title">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </h2>
+                
+                <div class="post-excerpt">
+                    {{ if .Summary }}
+                        {{ .Summary | plainify | truncate 200 }}
+                    {{ else }}
+                        {{ .Content | plainify | truncate 200 }}
                     {{ end }}
                 </div>
-                {{ end }}
-            </div>
-            
-            <h2 class="post-title">
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h2>
-            
-            <div class="post-excerpt">
-                {{ .Summary | default .Content | truncate 200 }}
-            </div>
-            
-            <div class="post-footer">
-                <a href="{{ .RelPermalink }}" class="read-more">Читать далее →</a>
+                
+                <div class="post-footer">
+                    <a href="{{ .RelPermalink }}" class="read-more">Читать далее</a>
+                </div>
             </div>
         </article>
         {{ end }}
