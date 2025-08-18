@@ -98,6 +98,207 @@ a.card-link {
     background: #ffffff;
 }
 
+/* Share Buttons */
+.share-buttons {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.share-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.share-buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.share-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.share-button:hover::before {
+    left: 100%;
+}
+
+.share-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.share-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.share-icon-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+.share-text {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Telegram */
+.share-telegram {
+    background: linear-gradient(135deg, #0088cc, #00a8ff);
+}
+
+.share-telegram:hover {
+    background: linear-gradient(135deg, #0077b3, #0099e6);
+}
+
+/* WhatsApp */
+.share-whatsapp {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+.share-whatsapp:hover {
+    background: linear-gradient(135deg, #20bd5a, #0f7a6b);
+}
+
+/* VK */
+.share-vk {
+    background: linear-gradient(135deg, #4c75a3, #5b7fa6);
+}
+
+.share-vk:hover {
+    background: linear-gradient(135deg, #436b94, #4f7291);
+}
+
+/* Twitter/X */
+.share-twitter {
+    background: linear-gradient(135deg, #1da1f2, #0d8bd9);
+}
+
+.share-twitter:hover {
+    background: linear-gradient(135deg, #1a91da, #0c7ac7);
+}
+
+/* Facebook */
+.share-facebook {
+    background: linear-gradient(135deg, #1877f2, #166fe5);
+}
+
+.share-facebook:hover {
+    background: linear-gradient(135deg, #166fe5, #1464d2);
+}
+
+/* Copy Button */
+.share-copy {
+    background: linear-gradient(135deg, #6b7280, #4b5563);
+}
+
+.share-copy:hover {
+    background: linear-gradient(135deg, #5b6380, #3d4651);
+}
+
+.share-copy.copied {
+    background: linear-gradient(135deg, #10b981, #059669);
+    animation: pulse 0.6s ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .share-buttons-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.5rem;
+    }
+    
+    .share-button {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .share-text {
+        font-size: 0.75rem;
+    }
+    
+    .share-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .share-icon-text {
+        width: 18px;
+        height: 18px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .share-buttons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .share-button {
+        flex-direction: column;
+        gap: 0.25rem;
+        padding: 0.8rem 0.5rem;
+    }
+    
+    .share-text {
+        font-size: 0.7rem;
+    }
+}
+
 a.card-link:hover {
     border-color: #1976d2;
     box-shadow: 0 4px 16px rgba(25, 118, 210, 0.15);

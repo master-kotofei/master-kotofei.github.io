@@ -17,7 +17,7 @@ theme = "vpn-guru-theme"
 
 [params]
   subtitle = 'Лучший блог о ВПН'
-  ShowShareButtons = false
+  ShowShareButtons = true
   ShowReadingTime = true
   ShowWordCount = false
   ShowToc = true
