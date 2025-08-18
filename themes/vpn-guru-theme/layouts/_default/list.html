@@ -29,6 +29,19 @@
                 
                 <div class="post-footer">
                     <a href="{{ .RelPermalink }}" class="read-more">Читать далее</a>
+                    {{ $authorParam := .Params.author }}
+                    {{ if not $authorParam }}
+                        {{ $authorParam = .Site.Params.author }}
+                    {{ end }}
+                    {{ if $authorParam }}
+                        <span class="card-author">
+                            {{ if reflect.IsSlice $authorParam }}
+                                {{ delimit $authorParam ", " }}
+                            {{ else }}
+                                {{ $authorParam }}
+                            {{ end }}
+                        </span>
+                    {{ end }}
                 </div>
             </div>
         </article>
