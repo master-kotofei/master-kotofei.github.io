@@ -3,7 +3,7 @@ date = '{{ .Date }}'
 draft = false
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 description = 'summary'
-categories = ['vpn', 'useful', 'vless', 'actual']
+categories = ['VPN']
 tags = ['VPN', 'ВПН', 'Блокировки', '2025', 'Актуально', 'Russia', 'Россия', 'DPI', 'VLESS']
 +++
 
