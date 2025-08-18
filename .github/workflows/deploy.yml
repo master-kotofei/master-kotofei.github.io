@@ -39,7 +39,7 @@ jobs:
       # Собираем; прокидываем baseURL от Pages для корректных ссылок
       - name: Build
         run: |
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       # Публикуем артефакт для деплоя Pages
       - name: Upload artifact

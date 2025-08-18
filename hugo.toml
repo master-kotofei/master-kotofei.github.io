@@ -14,7 +14,6 @@ theme = "vpn-guru-theme"
   changefreq = "hourly"
   priority = 0.5
   filename = "sitemap.xml"
-  enabled = false
 
 [params]
   subtitle = 'Лучший блог о ВПН'
