@@ -280,8 +280,99 @@ body {
 }
 
 /* Single Post */
+/* Post Layout with Sidebar */
+.post-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.post-main {
+    min-width: 0;
+}
+
 .post-single {
     max-width: 100%;
+}
+
+/* Sidebar */
+.post-sidebar {
+    position: sticky;
+    top: 120px;
+    height: fit-content;
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+}
+
+.toc-container {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toc-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1976d2;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e3f2fd;
+}
+
+/* Table of Contents Styling */
+.toc-container nav {
+    font-size: 0.9rem;
+}
+
+.toc-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-container li {
+    margin-bottom: 0.5rem;
+}
+
+.toc-container a {
+    color: #666;
+    text-decoration: none;
+    display: block;
+    padding: 0.25rem 0;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    line-height: 1.4;
+}
+
+.toc-container a:hover {
+    color: #1976d2;
+    background: #f0f7ff;
+    padding-left: 0.5rem;
+}
+
+/* Nested TOC levels */
+.toc-container ul ul {
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+}
+
+.toc-container ul ul a {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.toc-container ul ul ul {
+    margin-left: 1rem;
+}
+
+.toc-container ul ul ul a {
+    font-size: 0.8rem;
+    color: #999;
 }
 
 .post-header {
@@ -674,6 +765,22 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .post-layout {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 15px;
+    }
+    
+    .post-sidebar {
+        position: static;
+        order: -1;
+        margin-bottom: 1rem;
+    }
+    
+    .toc-container {
+        padding: 1rem;
+    }
+    
     .header-content {
         flex-direction: column;
         gap: 1rem;
