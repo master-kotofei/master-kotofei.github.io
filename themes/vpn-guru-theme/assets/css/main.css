@@ -898,8 +898,52 @@ a.card-link:hover {
     background: linear-gradient(135deg, #ecfdf5, #d1fae5);
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
-    border: 1px solid #a7f3d0;
+}
+
+.view-count {
+    color: #7c3aed;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
     transition: all 0.3s ease;
+}
+
+.view-count:hover {
+    background: linear-gradient(135deg, #e5e7eb, #d1d5db);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(124, 58, 237, 0.15);
+}
+
+.view-count-icon {
+    font-size: 1rem;
+}
+
+.view-count-number {
+    font-weight: 600;
+    color: #5b21b6;
+    transition: all 0.3s ease;
+}
+
+.view-count-number.view-count-updated {
+    animation: viewCountPulse 1s ease-in-out;
+}
+
+@keyframes viewCountPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+        color: #7c3aed;
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .reading-time:hover {

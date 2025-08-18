@@ -34,6 +34,10 @@
     {{ $script := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
     <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
     
+    <!-- View Counter JavaScript -->
+    {{ $viewCounter := resources.Get "js/view-counter.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $viewCounter.RelPermalink }}" integrity="{{ $viewCounter.Data.Integrity }}"></script>
+    
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function(m,e,t,r,i,k,a){

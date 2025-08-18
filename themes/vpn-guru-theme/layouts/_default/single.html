@@ -28,6 +28,10 @@
                         <span class="reading-time-icon">⏱️</span>
                         {{ math.Round (div (countwords .Content) 200.0) }} мин
                     </span>
+                    <span class="view-count">
+                        <span class="view-count-icon">👁️</span>
+                        <span class="view-count-number" data-post-id="{{ .File.UniqueID }}">0</span> просмотров
+                    </span>
                 </div>
                 {{ if .Params.tags }}
                 <div class="post-tags">
