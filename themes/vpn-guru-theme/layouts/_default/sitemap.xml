@@ -4,21 +4,21 @@
 <url>
 <loc>{{ .Permalink }}</loc>
 {{ if not .Date.IsZero }}<lastmod>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>{{ end }}
-<changefreq>weekly</changefreq>
+<changefreq>hourly</changefreq>
 <priority>0.5</priority>
 </url>
 {{ end }}
 <url>
 <loc>{{ .Site.BaseURL }}</loc>
 <lastmod>{{ now.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
-<changefreq>daily</changefreq>
+<changefreq>hourly</changefreq>
 <priority>1.0</priority>
 </url>
 {{ range .Site.Taxonomies.categories }}
 <url>
 <loc>{{ .Page.Permalink }}</loc>
 <lastmod>{{ .Page.Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
-<changefreq>weekly</changefreq>
+<changefreq>hourly</changefreq>
 <priority>0.7</priority>
 </url>
 {{ end }}
@@ -26,7 +26,7 @@
 <url>
 <loc>{{ .Page.Permalink }}</loc>
 <lastmod>{{ .Page.Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
-<changefreq>weekly</changefreq>
+<changefreq>hourly</changefreq>
 <priority>0.6</priority>
 </url>
 {{ end }}
