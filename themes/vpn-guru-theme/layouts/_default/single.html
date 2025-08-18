@@ -24,6 +24,10 @@
                         {{ end }}
                     </span>
                     {{ end }}
+                    <span class="reading-time">
+                        <span class="reading-time-icon">⏱️</span>
+                        {{ math.Round (div (countwords .Content) 200.0) }} мин
+                    </span>
                 </div>
                 {{ if .Params.tags }}
                 <div class="post-tags">
