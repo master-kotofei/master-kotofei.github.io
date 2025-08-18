@@ -44,9 +44,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add loading animation to post cards
     const postCards = document.querySelectorAll('.post-card');
     postCards.forEach(card => {
+        // basic hover transition
         card.addEventListener('mouseenter', function() {
             this.style.transition = 'all 0.3s ease';
         });
+
+        // make entire card clickable
+        const href = card.getAttribute('data-href');
+        if (href) {
+            card.addEventListener('click', () => {
+                window.location.href = href;
+            });
+
+            // keyboard accessibility
+            card.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    window.location.href = href;
+                }
+            });
+        }
     });
 
     // Lazy loading for images (if needed)
