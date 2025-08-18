@@ -11,7 +11,7 @@ theme = "vpn-guru-theme"
 
 # Настройки sitemap
 [sitemap]
-  changefreq = "daily"
+  changefreq = "hourly"
   priority = 0.5
   filename = "sitemap.xml"
 
