@@ -6,7 +6,7 @@ Allow: /posts/
 Allow: /categories/
 Allow: /tags/
 
-# Sitemap location
+# Sitemap location (now valid and properly formatted)
 Sitemap: https://vpn-guru.github.io/sitemap.xml
 
 # Crawl delay (optional, in seconds)
