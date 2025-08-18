@@ -4,7 +4,7 @@ draft = false
 title = 'ТОП-3 работающих ВПН в России: обзор и сравнение'
 description = 'Статья представляет обзор трех лучших VPN-решений для России в 2025 году.'
 categories = ['VPN']
-tags = ['vpn', 'блокировки', '2025', 'russia', 'top']
+tags = ['VPN', 'Блокировки', '2025', 'Russia', 'TOP']
 +++
 
 ![ТОП-3 работающих ВПН в России: обзор и сравнение](https://ladyfly-content.fra1.cdn.digitaloceanspaces.com/EFBC9FE9-773A-4476-A653-126FB84D017B.jpeg)
