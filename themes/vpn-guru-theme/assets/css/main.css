@@ -518,13 +518,33 @@ a.card-link:hover {
     font-size: 1.25rem;
     margin-bottom: 1rem;
     line-height: 1.4;
-    background: linear-gradient(135deg, #1e293b, #334155);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1e293b;
     font-weight: 700;
     letter-spacing: -0.025em;
 }
+
+/* Ensure emojis in post cards are colored */
+/* (removed over-aggressive emoji overrides) */
+
+/* Ensure emoji display correctly in titles (keep font fallbacks only) */
+
+/* (removed) */
+
+/* (removed) */
+
+/* (removed) */
+
+/* (removed -webkit-text-fill-color from headings) */
+
+/* Keep a robust font stack including color emoji */
+.post-title,
+.post-header .post-title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol";
+}
+
+/* (removed) */
+
+/* (removed) */
 
 .post-title a {
     color: #111827;
@@ -859,6 +879,13 @@ a.card-link:hover {
     font-size: 2.2rem;
     margin-bottom: 1rem;
     color: #333;
+}
+
+/* Ensure emojis in post headers are colored */
+.post-header .post-title emoji {
+    color: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background: none !important;
 }
 
 .post-header .post-meta {
