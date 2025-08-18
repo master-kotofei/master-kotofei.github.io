@@ -350,6 +350,48 @@ body {
     text-align: justify;
 }
 
+/* Markdown content in summary */
+.post-summary-text p {
+    margin: 0 0 1rem 0;
+}
+
+.post-summary-text p:last-child {
+    margin-bottom: 0;
+}
+
+.post-summary-text strong,
+.post-summary-text b {
+    font-weight: 600;
+    color: #1976d2;
+}
+
+.post-summary-text em,
+.post-summary-text i {
+    font-style: italic;
+    color: #424242;
+}
+
+.post-summary-text a {
+    color: #2563eb;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.post-summary-text a:hover {
+    border-bottom-color: #2563eb;
+}
+
+.post-summary-text ul,
+.post-summary-text ol {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.post-summary-text li {
+    margin-bottom: 0.25rem;
+}
+
 .post-header .tag {
     background: linear-gradient(135deg, #e0f2fe, #b3e5fc);
     color: #0277bd;
