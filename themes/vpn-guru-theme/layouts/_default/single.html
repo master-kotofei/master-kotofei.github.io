@@ -10,19 +10,29 @@
             <header class="post-header">
                 <h1 class="post-title">{{ .Title }}</h1>
                 
-                <div class="post-meta">
+                            <div class="post-meta">
+                <div class="post-meta-primary">
                     <time class="post-date">{{ .Date.Format "02.01.2006" }}</time>
-                    {{ if .Params.author }}
-                    <span class="post-author">Автор: {{ .Params.author }}</span>
-                    {{ end }}
-                    {{ if .Params.tags }}
-                    <div class="post-tags">
-                        {{ range .Params.tags }}
-                        <span class="tag">{{ . }}</span>
+                    {{ $authorParam := .Param "author" }}
+                    {{ if $authorParam }}
+                    <span class="post-author">
+                        <span class="author-icon">👤</span>
+                        {{ if or (eq (printf "%T" $authorParam) "[]string") (eq (printf "%T" $authorParam) "[]interface {}") }}
+                            {{ delimit $authorParam ", " }}
+                        {{ else }}
+                            {{ $authorParam }}
                         {{ end }}
-                    </div>
+                    </span>
                     {{ end }}
                 </div>
+                {{ if .Params.tags }}
+                <div class="post-tags">
+                    {{ range .Params.tags }}
+                    <span class="tag">{{ . }}</span>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
             </header>
             
             <!-- Post Summary -->
