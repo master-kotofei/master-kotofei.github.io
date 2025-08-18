@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {{ range .Data.Pages }}
 <url>
-<loc>{{ .Permalink }}</loc>
+<loc>{{ .Site.BaseURL }}{{ .RelPermalink | strings.TrimPrefix "/" }}</loc>
 {{ if not .Date.IsZero }}<lastmod>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>{{ end }}
 <changefreq>hourly</changefreq>
 <priority>0.5</priority>
@@ -16,7 +16,7 @@
 </url>
 {{ range .Site.Taxonomies.categories }}
 <url>
-<loc>{{ .Page.Permalink }}</loc>
+<loc>{{ $.Site.BaseURL }}{{ .Page.RelPermalink | strings.TrimPrefix "/" }}</loc>
 <lastmod>{{ .Page.Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
 <changefreq>hourly</changefreq>
 <priority>0.7</priority>
@@ -24,7 +24,7 @@
 {{ end }}
 {{ range .Site.Taxonomies.tags }}
 <url>
-<loc>{{ .Page.Permalink }}</loc>
+<loc>{{ $.Site.BaseURL }}{{ .Page.RelPermalink | strings.TrimPrefix "/" }}</loc>
 <lastmod>{{ .Page.Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
 <changefreq>hourly</changefreq>
 <priority>0.6</priority>
