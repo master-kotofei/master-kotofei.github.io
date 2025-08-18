@@ -836,14 +836,19 @@ a.card-link:hover {
 }
 
 .post-summary-text a {
-    color: #2563eb;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom-color 0.2s ease;
+    color: #1976d2;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
 }
 
 .post-summary-text a:hover {
-    border-bottom-color: #2563eb;
+    color: #1565c0;
+}
+
+/* Remove external-link arrow decoration inside summary text */
+.post-summary-text a[href^="http"]::after {
+    content: none !important;
 }
 
 .post-summary-text ul,
@@ -886,32 +891,18 @@ a.card-link:hover {
 /* Post content links */
 .post-content a {
     color: #1976d2;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: all 0.3s ease;
-    font-weight: 500;
-    position: relative;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
 }
 
 .post-content a:hover {
     color: #1565c0;
-    border-bottom-color: #1976d2;
-    transform: translateY(-1px);
 }
 
-.post-content a::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: linear-gradient(90deg, #1976d2, #42a5f5);
-    transition: width 0.3s ease;
-}
-
-.post-content a:hover::after {
-    width: 100%;
+/* Remove external-link arrow decoration inside post text */
+.post-content a[href^="http"]::after {
+    content: none !important;
 }
 
 .post-content h1,
