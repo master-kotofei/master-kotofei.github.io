@@ -4,6 +4,7 @@ date: 2025-08-07T23:00:00+02:00
 draft: false
 description: "YouTube не открывается даже с VPN? С июля 2025 года в России действует новая волна блокировок. Рассказываем, как работает DPI и какой VPN действительно помогает."
 tags: ["VPN", "YouTube", "блокировки", "Россия", "DPI", "цензура"]
+categories: ["VPN", "YouTube"]
 ---
 
 ![Почему не работает YouTube в России даже с VPN — и что с этим делать в 2025 году](https://ladyfly-content.fra1.cdn.digitaloceanspaces.com/2F107DCE-118D-4DE1-8A1C-663EC7DA5CED.jpeg)
