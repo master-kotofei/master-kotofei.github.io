@@ -7,8 +7,8 @@
     <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.subtitle }}{{ else }}{{ .Summary | default .Site.Params.subtitle }}{{ end }}">
     
     <!-- CSS -->
-    {{ $style := resources.Get "css/main.css" | resources.Minify }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ $style := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -26,8 +26,8 @@
     {{ partial "footer.html" . }}
     
     <!-- JavaScript -->
-    {{ $script := resources.Get "js/main.js" | resources.Minify }}
-    <script src="{{ $script.RelPermalink }}"></script>
+    {{ $script := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
     
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
