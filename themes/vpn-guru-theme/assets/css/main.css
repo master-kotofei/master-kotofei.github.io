@@ -308,15 +308,22 @@ a.card-link:hover {
     border: none;
     border-radius: 16px;
     padding: 0;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.05),
+        0 4px 8px rgba(0, 0, 0, 0.08),
+        0 8px 16px rgba(0, 0, 0, 0.06);
     overflow: hidden;
     position: relative;
+    backdrop-filter: blur(10px);
 }
 
 .post-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 
+        0 8px 16px rgba(0, 0, 0, 0.1),
+        0 16px 32px rgba(0, 0, 0, 0.12),
+        0 32px 64px rgba(0, 0, 0, 0.08);
 }
 
 .post-card::before {
@@ -333,6 +340,42 @@ a.card-link:hover {
 
 .post-card:hover::before {
     transform: scaleX(1);
+}
+
+/* Active state for post cards */
+.post-card:active {
+    transform: translateY(-4px) scale(0.98);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.15),
+        0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease;
+}
+
+/* Focus state for accessibility */
+.post-card:focus {
+    outline: none;
+    box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.05),
+        0 4px 8px rgba(0, 0, 0, 0.08),
+        0 8px 16px rgba(0, 0, 0, 0.06),
+        0 0 0 3px rgba(25, 118, 210, 0.3);
+}
+
+/* Dark theme support for shadows */
+@media (prefers-color-scheme: dark) {
+    .post-card {
+        box-shadow: 
+            0 2px 4px rgba(255, 255, 255, 0.05),
+            0 4px 8px rgba(255, 255, 255, 0.08),
+            0 8px 16px rgba(255, 255, 255, 0.06);
+    }
+    
+    .post-card:hover {
+        box-shadow: 
+            0 8px 16px rgba(255, 255, 255, 0.1),
+            0 16px 32px rgba(255, 255, 255, 0.12),
+            0 32px 64px rgba(255, 255, 255, 0.08);
+    }
 }
 
 
