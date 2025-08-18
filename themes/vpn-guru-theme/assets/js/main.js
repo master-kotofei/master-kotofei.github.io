@@ -65,4 +65,34 @@ document.addEventListener('DOMContentLoaded', function() {
         const lazyImages = document.querySelectorAll('img[data-src]');
         lazyImages.forEach(img => imageObserver.observe(img));
     }
+
+    // Table of Contents active section tracking
+    const tocLinks = document.querySelectorAll('.toc-container a[href^="#"]');
+    const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+    
+    if (tocLinks.length > 0 && headings.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Remove active class from all TOC links
+                    tocLinks.forEach(link => link.classList.remove('active'));
+                    
+                    // Add active class to current section link
+                    const currentId = entry.target.id;
+                    const currentLink = document.querySelector(`.toc-container a[href="#${currentId}"]`);
+                    if (currentLink) {
+                        currentLink.classList.add('active');
+                    }
+                }
+            });
+        }, {
+            rootMargin: '-20% 0px -70% 0px'
+        });
+
+        headings.forEach(heading => {
+            if (heading.id) {
+                observer.observe(heading);
+            }
+        });
+    }
 });
