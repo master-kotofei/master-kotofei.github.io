@@ -230,11 +230,6 @@ class LastPostTracker {
         
         // Добавляем индикатор "Последний просмотренный"
         this.addLastVisitedIndicator(postCard, lastPost);
-        
-        // Плавно прокручиваем к последнему посту
-        setTimeout(() => {
-            this.scrollToLastPost(postCard);
-        }, 500);
 
         console.log('Выделен последний пост:', lastPost.title);
     }
@@ -258,19 +253,6 @@ class LastPostTracker {
         if (postCardContent) {
             postCardContent.insertBefore(indicator, postCardContent.firstChild);
         }
-    }
-
-    /**
-     * Плавно прокручивает к последнему посту
-     */
-    scrollToLastPost(postCard) {
-        const offset = 100; // Отступ от верха
-        const cardTop = postCard.offsetTop - offset;
-        
-        window.scrollTo({
-            top: cardTop,
-            behavior: 'smooth'
-        });
     }
 
     /**
