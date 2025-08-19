@@ -36,7 +36,10 @@ theme = "vpn-guru-theme"
   changefreq = "hourly"
   priority = 0.5
   filename = "sitemap.xml"
+  # Отключаем автоматическую генерацию
+  disable = true
 
+# Отключаем автоматическую генерацию карты сайта для таксономий
 [params]
   subtitle = 'Лучший блог о ВПН'
   ShowShareButtons = true
@@ -47,6 +50,11 @@ theme = "vpn-guru-theme"
   ShowBreadCrumbs = false
   ShowPostNavLinks = true
   author = ["vpnguru"]
+  
+  # Настройки для карты сайта
+  [params.sitemap]
+    # Отключаем автоматическую генерацию для таксономий
+    disableTaxonomyPages = true
 
 [services]
   [services.googleAnalytics]
