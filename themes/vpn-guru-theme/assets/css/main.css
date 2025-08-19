@@ -299,6 +299,80 @@ a.card-link {
     }
 }
 
+/* Tag Pages */
+.tag-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.tag-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.tag-title {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.tag-description {
+    font-size: 1.1rem;
+    color: #64748b;
+}
+
+.tag-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tag-post {
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.tag-post:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #1976d2;
+}
+
+.tag-post .post-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.tag-post .post-title a {
+    color: #1e293b;
+    text-decoration: none;
+}
+
+.tag-post .post-title a:hover {
+    color: #1976d2;
+}
+
+.tag-post .post-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.tag-post .post-summary {
+    color: #475569;
+    line-height: 1.6;
+}
+
 a.card-link:hover {
     border-color: #1976d2;
     box-shadow: 0 4px 16px rgba(25, 118, 210, 0.15);

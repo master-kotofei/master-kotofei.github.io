@@ -3,6 +3,28 @@ languageCode = "ru"
 title = "VPN Guru"
 theme = "vpn-guru-theme"
 
+# Настройки URL для более читаемых ссылок
+[permalinks]
+  posts = "/posts/:contentbasename/"
+  tags = "/tags/:slug/"
+  categories = "/categories/:slug/"
+
+# Настройки для транслитерации русских тегов
+[slugify]
+  paths = "ascii"
+  case = "lower"
+
+# Настройки таксономий
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Настройки для русских URL
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [pagination]
   pagerSize = 10
   
