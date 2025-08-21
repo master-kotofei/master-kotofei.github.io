@@ -231,6 +231,15 @@ a.card-link {
     background: linear-gradient(135deg, #166fe5, #1464d2);
 }
 
+/* OK.ru */
+.share-ok {
+    background: linear-gradient(135deg, #ee8208, #f7931e);
+}
+
+.share-ok:hover {
+    background: linear-gradient(135deg, #d67300, #e68500);
+}
+
 /* Copy Button */
 .share-copy {
     background: linear-gradient(135deg, #6b7280, #4b5563);
