@@ -61,4 +61,15 @@ theme = "vpn-guru-theme"
   [params.sitemap]
     # Отключаем автоматическую генерацию для таксономий
     disableTaxonomyPages = true
+  
+  # Настройки рекламы
+  enableAds = true
+  
+  # Параметры рекламного блока
+  [params.ads]
+    title = "Лучший VPN для России 2025"
+    text = "**X Rocket VPN** - единственный Телеграм-бот, реально работающий в России"
+    iconUrl = "https://imagestoring.fra1.cdn.digitaloceanspaces.com/71ED88D8-53F8-4CFA-A495-0E558C8F7424.png"
+    targetUrl = "https://t.me/X_Rocket_VPN_bot?start=ref-b-9"
+    buttonText = "Попробовать сейчас"
 
