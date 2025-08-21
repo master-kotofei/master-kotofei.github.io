@@ -51,12 +51,11 @@ theme = "vpn-guru-theme"
   ShowPostNavLinks = true
   author = ["vpnguru"]
   
+  # Google Analytics ID
+  googleAnalytics = "G-ZXWCMEHEJC"
+  
   # Настройки для карты сайта
   [params.sitemap]
     # Отключаем автоматическую генерацию для таксономий
     disableTaxonomyPages = true
-
-[services]
-  [services.googleAnalytics]
-    ID = 'G-ZXWCMEHEJC'
 
