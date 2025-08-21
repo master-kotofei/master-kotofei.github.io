@@ -3093,7 +3093,7 @@ a.card-link:hover {
     box-shadow: 0 4px 20px rgba(99, 102, 241, 0.1);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
-    animation: gentle-pulse 4s ease-in-out infinite, attention-glow 6s ease-in-out infinite;
+    animation: attention-glow 4s ease-in-out infinite;
 }
 
 .ad-banner::before {
@@ -3102,10 +3102,10 @@ a.card-link:hover {
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 3px;
     background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899, #f59e0b);
     background-size: 200% 100%;
-    animation: gradient-slide 3s ease infinite;
+    animation: gradient-slide 2s ease infinite;
 }
 
 @keyframes gradient-slide {
@@ -3114,16 +3114,7 @@ a.card-link:hover {
     100% { background-position: 0% 50%; }
 }
 
-@keyframes gentle-pulse {
-    0%, 100% { 
-        transform: scale(1);
-        box-shadow: 0 4px 20px rgba(99, 102, 241, 0.1);
-    }
-    50% { 
-        transform: scale(1.02);
-        box-shadow: 0 6px 25px rgba(99, 102, 241, 0.15);
-    }
-}
+
 
 @keyframes attention-glow {
     0%, 100% { 
@@ -3131,13 +3122,12 @@ a.card-link:hover {
         box-shadow: 0 4px 20px rgba(99, 102, 241, 0.1);
     }
     50% { 
-        border-color: #bfdbfe;
-        box-shadow: 0 6px 25px rgba(59, 130, 246, 0.2);
+        border-color: #3b82f6;
+        box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3);
     }
 }
 
 .ad-banner:hover {
-    transform: translateY(-4px) scale(1.01);
     box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
     border-color: #bfdbfe;
     animation-play-state: paused;
@@ -3256,7 +3246,7 @@ a.card-link:hover {
 
 .ad-banner-button-icon {
     font-size: 1.2rem;
-    animation: rocket-float 3s ease-in-out infinite;
+    animation: rocket-float 2s ease-in-out infinite;
 }
 
 @keyframes rocket-float {
