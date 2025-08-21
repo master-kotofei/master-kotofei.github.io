@@ -3093,7 +3093,7 @@ a.card-link:hover {
     box-shadow: 0 4px 20px rgba(99, 102, 241, 0.1);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
-    animation: attention-glow 4s ease-in-out infinite;
+    animation: attention-glow 4s ease-in-out infinite, light-play 6s ease-in-out infinite;
 }
 
 .ad-banner::before {
@@ -3106,6 +3106,17 @@ a.card-link:hover {
     background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899, #f59e0b);
     background-size: 200% 100%;
     animation: gradient-slide 2s ease infinite;
+}
+
+.ad-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: light-sweep 4s ease-in-out infinite;
 }
 
 @keyframes gradient-slide {
@@ -3124,6 +3135,24 @@ a.card-link:hover {
     50% { 
         border-color: #3b82f6;
         box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3);
+    }
+}
+
+@keyframes light-play {
+    0% { 
+        background: linear-gradient(135deg, #eff6ff 0%, #ffffff 50%, #eff6ff 100%);
+    }
+    100% { 
+        background: linear-gradient(135deg, #eff6ff 0%, #ffffff 50%, #eff6ff 100%);
+    }
+}
+
+@keyframes light-sweep {
+    0% { 
+        left: -100%;
+    }
+    100% { 
+        left: 100%;
     }
 }
 
