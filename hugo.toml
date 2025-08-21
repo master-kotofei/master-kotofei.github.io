@@ -54,6 +54,9 @@ theme = "vpn-guru-theme"
   # Google Analytics ID
   googleAnalytics = "G-ZXWCMEHEJC"
   
+  # Яндекс.Метрика ID
+  yandexMetrika = "103785798"
+  
   # Настройки для карты сайта
   [params.sitemap]
     # Отключаем автоматическую генерацию для таксономий
