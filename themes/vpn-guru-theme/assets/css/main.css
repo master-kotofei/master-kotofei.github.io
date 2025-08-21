@@ -2411,11 +2411,21 @@ a.card-link:hover {
 
 @media (max-width: 768px) {
     .home-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
         padding: 0 0.5rem;
     }
     
     .sidebar {
+        position: static;
+        order: 2; /* Размещаем сайдбар после основного контента */
+        margin-top: 2rem;
+        margin-bottom: 0;
         padding: 1rem;
+    }
+    
+    .main-content {
+        order: 1; /* Основной контент идет первым */
     }
     
     .categories-list {
@@ -2444,6 +2454,87 @@ a.card-link:hover {
     .tag-link {
         padding: 0.35rem 0.7rem;
         font-size: 0.8rem;
+    }
+    
+    /* Дополнительные стили для мобильной версии */
+    .sidebar-widget {
+        margin-bottom: 1.5rem;
+    }
+    
+    .sidebar-widget:last-child {
+        margin-bottom: 0;
+    }
+    
+    .widget-title {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    /* Улучшения для постов на мобильных */
+    .posts-grid {
+        gap: 1rem;
+    }
+    
+    .post-card {
+        margin-bottom: 1rem;
+    }
+    
+    .post-card-content {
+        padding: 1rem;
+    }
+    
+    .post-title {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+    
+    /* Улучшения для заголовка на мобильных */
+    .page-header {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .site-title {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .site-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Улучшения для контейнера на мобильных */
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .page-header {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1.5rem 1rem;
+    }
+    
+    .post-excerpt {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    /* Улучшения для пагинации на мобильных */
+    .pagination {
+        gap: 1rem;
+    }
+    
+    .pagination-prev,
+    .pagination-next {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Улучшения для пагинации на мобильных */
+    .pagination-info {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 0.5rem 0;
     }
 }
 
@@ -2521,6 +2612,82 @@ a.card-link:hover {
 }
 
 @media (max-width: 480px) {
+    .home-container {
+        padding: 0 0.25rem;
+    }
+    
+    .sidebar {
+        padding: 0.75rem;
+        margin-top: 1.5rem;
+    }
+    
+    .sidebar-widget {
+        margin-bottom: 1rem;
+    }
+    
+    .categories-list {
+        gap: 0.4rem;
+    }
+    
+    .category-link {
+        padding: 0.5rem 0.6rem;
+        gap: 0.5rem;
+    }
+    
+    .tag-link {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
+    }
+    
+    /* Дополнительные улучшения для очень маленьких экранов */
+    .post-card-content {
+        padding: 0.75rem;
+    }
+    
+    .post-title {
+        font-size: 1rem;
+    }
+    
+    .post-excerpt {
+        font-size: 0.85rem;
+    }
+    
+    .widget-title {
+        font-size: 0.95rem;
+    }
+    
+    /* Улучшения для заголовка на очень маленьких экранах */
+    .site-title {
+        font-size: 1.6rem;
+    }
+    
+    .site-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    /* Улучшения для контейнера на очень маленьких экранах */
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    .page-header {
+        padding: 1rem 0.5rem;
+    }
+    
+    /* Улучшения для пагинации на очень маленьких экранах */
+    .pagination {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+    }
+    
+    .pagination-prev,
+    .pagination-next {
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem 1rem;
+    }
+    
     .footer-stats {
         flex-direction: column;
         gap: 0.75rem;
