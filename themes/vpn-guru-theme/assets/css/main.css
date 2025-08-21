@@ -1232,13 +1232,13 @@ a.card-link:hover {
 
 /* Улучшенные стили для кнопки на десктопе */
 .toc-toggle {
-    background: rgba(25, 118, 210, 0.02);
-    border: 1px solid rgba(25, 118, 210, 0.1);
+    background: rgba(25, 118, 210, 0.05);
+    border: 1px solid rgba(25, 118, 210, 0.15);
 }
 
 .toc-toggle:hover {
-    background: rgba(25, 118, 210, 0.08);
-    border-color: rgba(25, 118, 210, 0.2);
+    background: rgba(25, 118, 210, 0.12);
+    border-color: rgba(25, 118, 210, 0.25);
 }
 
 .toc-toggle:active {
@@ -1256,9 +1256,23 @@ a.card-link:hover {
 
 .toc-content {
     transition: max-height 0.3s ease, opacity 0.3s ease;
-    overflow: visible;
+    overflow: hidden;
     max-height: none;
     opacity: 1;
+}
+
+/* На десктопе оглавление развернуто по умолчанию */
+.toc-content.expanded {
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+}
+
+/* Состояние свернутого оглавления на десктопе */
+.toc-content:not(.expanded) {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
 }
 
 /* Анимация для плавного сворачивания */
@@ -2229,6 +2243,13 @@ a.card-link:hover {
         overflow: visible;
         transition: max-height 0.35s ease, opacity 0.35s ease;
     }
+    
+    /* Состояние свернутого оглавления на планшетах */
+    .toc-content:not(.expanded) {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2284,14 +2305,21 @@ a.card-link:hover {
         max-height: 0;
         opacity: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease, opacity 0.3s ease;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
     }
     
     .toc-content.expanded {
         max-height: none;
         opacity: 1;
         overflow: visible;
-        transition: max-height 0.3s ease, opacity 0.3s ease;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+    }
+    
+    /* Состояние свернутого оглавления на мобильных */
+    .toc-content:not(.expanded) {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
     }
     
     /* Компактные стили для ссылок оглавления */
@@ -2448,6 +2476,13 @@ a.card-link:hover {
     
     .toc-content.expanded {
         transition: max-height 0.5s ease, opacity 0.5s ease;
+    }
+    
+    /* Состояние свернутого оглавления на очень маленьких экранах */
+    .toc-content:not(.expanded) {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
     }
 }
 

@@ -121,10 +121,17 @@ document.addEventListener('DOMContentLoaded', function() {
         // Check if device is mobile
         const isMobile = window.innerWidth <= 768;
         
-        // On mobile devices, TOC is collapsed by default
+        // Initialize TOC state based on device type
         if (isMobile) {
+            // On mobile devices, TOC is collapsed by default
             tocContent.classList.remove('expanded');
             tocToggle.classList.add('collapsed');
+            tocToggle.setAttribute('aria-expanded', 'false');
+        } else {
+            // On desktop devices, TOC is expanded by default
+            tocContent.classList.add('expanded');
+            tocToggle.classList.remove('collapsed');
+            tocToggle.setAttribute('aria-expanded', 'true');
         }
         
         // Click handler for toggle button
@@ -145,12 +152,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Handle window resize
+        let currentIsMobile = isMobile;
         window.addEventListener('resize', function() {
-            const currentIsMobile = window.innerWidth <= 768;
+            const newIsMobile = window.innerWidth <= 768;
             
-            if (currentIsMobile !== isMobile) {
-                // Screen size changed, update state
-                if (currentIsMobile) {
+            if (newIsMobile !== currentIsMobile) {
+                currentIsMobile = newIsMobile;
+                
+                if (newIsMobile) {
                     // Switched to mobile
                     tocContent.classList.remove('expanded');
                     tocToggle.classList.add('collapsed');
@@ -163,8 +172,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
-        
-        // Set initial aria-attribute state
-        tocToggle.setAttribute('aria-expanded', isMobile ? 'false' : 'true');
     }
 });
