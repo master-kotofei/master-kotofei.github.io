@@ -3119,6 +3119,72 @@ a.card-link:hover {
     animation: light-sweep 4s ease-in-out infinite;
 }
 
+/* Конфетти частицы */
+.ad-banner .confetti {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #ff6b6b;
+    border-radius: 50%;
+    animation: confetti-fall 6s ease-in-out infinite;
+    opacity: 0;
+}
+
+.ad-banner .confetti:nth-child(1) { 
+    left: 15%; 
+    animation-delay: 0s; 
+    background: #ff6b6b; 
+    animation-name: confetti-fall-1;
+}
+.ad-banner .confetti:nth-child(2) { 
+    left: 25%; 
+    animation-delay: 0.8s; 
+    background: #4ecdc4; 
+    animation-name: confetti-fall-2;
+}
+.ad-banner .confetti:nth-child(3) { 
+    left: 35%; 
+    animation-delay: 1.6s; 
+    background: #45b7d1; 
+    animation-name: confetti-fall-3;
+}
+.ad-banner .confetti:nth-child(4) { 
+    left: 45%; 
+    animation-delay: 2.4s; 
+    background: #96ceb4; 
+    animation-name: confetti-fall-4;
+}
+.ad-banner .confetti:nth-child(5) { 
+    left: 55%; 
+    animation-delay: 3.2s; 
+    background: #feca57; 
+    animation-name: confetti-fall-5;
+}
+.ad-banner .confetti:nth-child(6) { 
+    left: 65%; 
+    animation-delay: 4s; 
+    background: #ff9ff3; 
+    animation-name: confetti-fall-6;
+}
+.ad-banner .confetti:nth-child(7) { 
+    left: 75%; 
+    animation-delay: 4.8s; 
+    background: #54a0ff; 
+    animation-name: confetti-fall-7;
+}
+.ad-banner .confetti:nth-child(8) { 
+    left: 85%; 
+    animation-delay: 5.6s; 
+    background: #5f27cd; 
+    animation-name: confetti-fall-8;
+}
+.ad-banner .confetti:nth-child(9) { 
+    left: 95%; 
+    animation-delay: 6.4s; 
+    background: #00d2d3; 
+    animation-name: confetti-fall-9;
+}
+
 @keyframes gradient-slide {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -3156,6 +3222,69 @@ a.card-link:hover {
     }
 }
 
+@keyframes confetti-fall-1 {
+    0% { top: -20px; left: 15%; opacity: 0; transform: scale(0) translateX(0); }
+    15% { opacity: 1; transform: scale(1) translateX(20px); }
+    85% { opacity: 1; transform: scale(1) translateX(-15px); }
+    100% { top: 120%; left: 10%; opacity: 0; transform: scale(0) translateX(10px); }
+}
+
+@keyframes confetti-fall-2 {
+    0% { top: -15px; left: 25%; opacity: 0; transform: scale(0) translateX(0); }
+    20% { opacity: 1; transform: scale(1) translateX(-25px); }
+    80% { opacity: 1; transform: scale(1) translateX(30px); }
+    100% { top: 110%; left: 30%; opacity: 0; transform: scale(0) translateX(-20px); }
+}
+
+@keyframes confetti-fall-3 {
+    0% { top: -25px; left: 35%; opacity: 0; transform: scale(0) translateX(0); }
+    25% { opacity: 1; transform: scale(1) translateX(35px); }
+    75% { opacity: 1; transform: scale(1) translateX(-40px); }
+    100% { top: 130%; left: 40%; opacity: 0; transform: scale(0) translateX(25px); }
+}
+
+@keyframes confetti-fall-4 {
+    0% { top: -10px; left: 45%; opacity: 0; transform: scale(0) translateX(0); }
+    30% { opacity: 1; transform: scale(1) translateX(-30px); }
+    70% { opacity: 1; transform: scale(1) translateX(35px); }
+    100% { top: 115%; left: 50%; opacity: 0; transform: scale(0) translateX(-15px); }
+}
+
+@keyframes confetti-fall-5 {
+    0% { top: -20px; left: 55%; opacity: 0; transform: scale(0) translateX(0); }
+    35% { opacity: 1; transform: scale(1) translateX(40px); }
+    65% { opacity: 1; transform: scale(1) translateX(-45px); }
+    100% { top: 125%; left: 60%; opacity: 0; transform: scale(0) translateX(30px); }
+}
+
+@keyframes confetti-fall-6 {
+    0% { top: -15px; left: 65%; opacity: 0; transform: scale(0) translateX(0); }
+    40% { opacity: 1; transform: scale(1) translateX(-35px); }
+    60% { opacity: 1; transform: scale(1) translateX(50px); }
+    100% { top: 120%; left: 70%; opacity: 0; transform: scale(0) translateX(-40px); }
+}
+
+@keyframes confetti-fall-7 {
+    0% { top: -25px; left: 75%; opacity: 0; transform: scale(0) translateX(0); }
+    45% { opacity: 1; transform: scale(1) translateX(45px); }
+    55% { opacity: 1; transform: scale(1) translateX(-55px); }
+    100% { top: 110%; left: 80%; opacity: 0; transform: scale(0) translateX(35px); }
+}
+
+@keyframes confetti-fall-8 {
+    0% { top: -20px; left: 85%; opacity: 0; transform: scale(0) translateX(0); }
+    50% { opacity: 1; transform: scale(1) translateX(-50px); }
+    50% { opacity: 1; transform: scale(1) translateX(60px); }
+    100% { top: 125%; left: 90%; opacity: 0; transform: scale(0) translateX(-45px); }
+}
+
+@keyframes confetti-fall-9 {
+    0% { top: -15px; left: 95%; opacity: 0; transform: scale(0) translateX(0); }
+    25% { opacity: 1; transform: scale(1) translateX(55px); }
+    75% { opacity: 1; transform: scale(1) translateX(-65px); }
+    100% { top: 115%; left: 100%; opacity: 0; transform: scale(0) translateX(50px); }
+}
+
 .ad-banner:hover {
     box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
     border-color: #bfdbfe;
@@ -3178,7 +3307,7 @@ a.card-link:hover {
 .ad-banner-icon img {
     width: 72px;
     height: 72px;
-    border-radius: 20px;
+    border-radius: 50%;
     border: 3px solid #f3f4f6;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -3328,6 +3457,7 @@ a.card-link:hover {
     .ad-banner-icon img {
         width: 64px;
         height: 64px;
+        border-radius: 50%;
     }
 }
 
@@ -3358,5 +3488,6 @@ a.card-link:hover {
     .ad-banner-icon img {
         width: 56px;
         height: 56px;
+        border-radius: 50%;
     }
 }
