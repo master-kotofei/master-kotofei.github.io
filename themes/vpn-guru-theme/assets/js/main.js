@@ -112,4 +112,59 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    
+    // Table of Contents toggle functionality
+    const tocToggle = document.querySelector('.toc-toggle');
+    const tocContent = document.querySelector('.toc-content');
+    
+    if (tocToggle && tocContent) {
+        // Check if device is mobile
+        const isMobile = window.innerWidth <= 768;
+        
+        // On mobile devices, TOC is collapsed by default
+        if (isMobile) {
+            tocContent.classList.remove('expanded');
+            tocToggle.classList.add('collapsed');
+        }
+        
+        // Click handler for toggle button
+        tocToggle.addEventListener('click', function() {
+            const isExpanded = tocContent.classList.contains('expanded');
+            
+            if (isExpanded) {
+                // Collapse TOC
+                tocContent.classList.remove('expanded');
+                tocToggle.classList.add('collapsed');
+                tocToggle.setAttribute('aria-expanded', 'false');
+            } else {
+                // Expand TOC
+                tocContent.classList.add('expanded');
+                tocToggle.classList.remove('collapsed');
+                tocToggle.setAttribute('aria-expanded', 'true');
+            }
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            const currentIsMobile = window.innerWidth <= 768;
+            
+            if (currentIsMobile !== isMobile) {
+                // Screen size changed, update state
+                if (currentIsMobile) {
+                    // Switched to mobile
+                    tocContent.classList.remove('expanded');
+                    tocToggle.classList.add('collapsed');
+                    tocToggle.setAttribute('aria-expanded', 'false');
+                } else {
+                    // Switched to desktop
+                    tocContent.classList.add('expanded');
+                    tocToggle.classList.remove('collapsed');
+                    tocToggle.setAttribute('aria-expanded', 'true');
+                }
+            }
+        });
+        
+        // Set initial aria-attribute state
+        tocToggle.setAttribute('aria-expanded', isMobile ? 'false' : 'true');
+    }
 });

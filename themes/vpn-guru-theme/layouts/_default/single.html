@@ -69,8 +69,15 @@
     <!-- Sidebar with Table of Contents -->
     <aside class="post-sidebar">
         <div class="toc-container">
-            <h3 class="toc-title">Оглавление</h3>
-            {{ .TableOfContents }}
+            <div class="toc-header">
+                <h3 class="toc-title">Оглавление</h3>
+                <button class="toc-toggle" aria-label="Свернуть/развернуть оглавление">
+                    <span class="toc-toggle-icon">▼</span>
+                </button>
+            </div>
+            <div class="toc-content">
+                {{ .TableOfContents }}
+            </div>
         </div>
     </aside>
 </div>
