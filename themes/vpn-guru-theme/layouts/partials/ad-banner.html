@@ -1,0 +1,20 @@
+{{ if .Site.Params.ads.enabled }}
+<div class="ad-banner">
+    <div class="ad-banner-content">
+        <div class="ad-banner-icon">
+            <img src="{{ .Site.Params.ads.iconUrl }}" alt="Реклама" loading="lazy">
+        </div>
+        <div class="ad-banner-text">
+            <h4 class="ad-banner-title">{{ .Site.Params.ads.title }}</h4>
+            <p class="ad-banner-description">{{ .Site.Params.ads.text | markdownify }}</p>
+        </div>
+        <div class="ad-banner-action">
+            <a href="{{ .Site.Params.ads.targetUrl }}" class="ad-banner-button" target="_blank" rel="noopener noreferrer">
+                {{ .Site.Params.ads.buttonText }}
+                <span class="ad-banner-button-icon">🚀</span>
+            </a>
+        </div>
+    </div>
+    <div class="ad-banner-badge">Реклама</div>
+</div>
+{{ end }}
