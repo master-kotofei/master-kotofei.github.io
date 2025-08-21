@@ -3084,7 +3084,7 @@ a.card-link:hover {
 
 /* ===== РЕКЛАМНЫЙ БАННЕР - НОВЫЙ СТИЛЬ ===== */
 .ad-banner {
-    background: #ffffff;
+    background: linear-gradient(135deg, #eff6ff 0%, #ffffff 50%, #eff6ff 100%);
     border: 2px solid #e0e7ff;
     border-radius: 16px;
     padding: 1.5rem;
@@ -3093,6 +3093,7 @@ a.card-link:hover {
     box-shadow: 0 4px 20px rgba(99, 102, 241, 0.1);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
+    animation: gentle-pulse 4s ease-in-out infinite, attention-glow 6s ease-in-out infinite;
 }
 
 .ad-banner::before {
@@ -3113,10 +3114,33 @@ a.card-link:hover {
     100% { background-position: 0% 50%; }
 }
 
+@keyframes gentle-pulse {
+    0%, 100% { 
+        transform: scale(1);
+        box-shadow: 0 4px 20px rgba(99, 102, 241, 0.1);
+    }
+    50% { 
+        transform: scale(1.02);
+        box-shadow: 0 6px 25px rgba(99, 102, 241, 0.15);
+    }
+}
+
+@keyframes attention-glow {
+    0%, 100% { 
+        border-color: #e0e7ff;
+        box-shadow: 0 4px 20px rgba(99, 102, 241, 0.1);
+    }
+    50% { 
+        border-color: #bfdbfe;
+        box-shadow: 0 6px 25px rgba(59, 130, 246, 0.2);
+    }
+}
+
 .ad-banner:hover {
-    transform: translateY(-4px);
+    transform: translateY(-4px) scale(1.01);
     box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
-    border-color: #c7d2fe;
+    border-color: #bfdbfe;
+    animation-play-state: paused;
 }
 
 .ad-banner-content {
