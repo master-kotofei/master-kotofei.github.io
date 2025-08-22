@@ -2181,6 +2181,12 @@ a.card-link:hover {
     text-decoration: none;
 }
 
+/* Post Tags Container - Center Alignment */
+.post-tags {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
 .tag:hover {
     background: linear-gradient(135deg, #e3f2fd, #bbdefb);
     color: #1565c0;
