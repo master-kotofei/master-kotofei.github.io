@@ -1,5 +1,5 @@
 {{ if .Site.Params.ads.enabled }}
-<div class="ad-banner">
+<div class="promo-banner">
     <!-- Конфетти частицы -->
     <div class="confetti"></div>
     <div class="confetti"></div>
@@ -11,21 +11,21 @@
     <div class="confetti"></div>
     <div class="confetti"></div>
     
-    <div class="ad-banner-content">
-        <div class="ad-banner-icon">
-            <img src="{{ .Site.Params.ads.iconUrl }}" alt="Реклама" loading="lazy">
+    <div class="promo-banner-content">
+        <div class="promo-banner-icon">
+            <img src="{{ .Site.Params.ads.iconUrl }}" alt="VPN сервис" loading="lazy">
         </div>
-        <div class="ad-banner-text">
-            <h4 class="ad-banner-title">{{ .Site.Params.ads.title }}</h4>
-            <p class="ad-banner-description">{{ .Site.Params.ads.text | markdownify }}</p>
+        <div class="promo-banner-text">
+            <h4 class="promo-banner-title">{{ .Site.Params.ads.title }}</h4>
+            <p class="promo-banner-description">{{ .Site.Params.ads.text | markdownify }}</p>
         </div>
-        <div class="ad-banner-action">
-            <a href="{{ .Site.Params.ads.targetUrl }}" class="ad-banner-button" target="_blank" rel="noopener noreferrer">
+        <div class="promo-banner-action">
+            <a href="{{ .Site.Params.ads.targetUrl }}" class="promo-banner-button" target="_blank" rel="noopener noreferrer">
                 {{ .Site.Params.ads.buttonText }}
-                <span class="ad-banner-button-icon">🚀</span>
+                <span class="promo-banner-button-icon">🚀</span>
             </a>
         </div>
     </div>
-    <div class="ad-banner-badge">Реклама</div>
+    <div class="promo-banner-badge">Промо</div>
 </div>
 {{ end }}

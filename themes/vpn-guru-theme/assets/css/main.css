@@ -3098,8 +3098,8 @@ a.card-link:hover {
     line-height: 1.4;
 }
 
-/* ===== РЕКЛАМНЫЙ БАННЕР - НОВЫЙ СТИЛЬ ===== */
-.ad-banner {
+/* ===== ПРОМО БАННЕР - НОВЫЙ СТИЛЬ ===== */
+.promo-banner {
     background: linear-gradient(135deg, #eff6ff 0%, #ffffff 50%, #eff6ff 100%);
     border: 2px solid #e0e7ff;
     border-radius: 16px;
@@ -3112,7 +3112,7 @@ a.card-link:hover {
     animation: attention-glow 4s ease-in-out infinite, light-play 6s ease-in-out infinite;
 }
 
-.ad-banner::before {
+.promo-banner::before {
     content: '';
     position: absolute;
     top: 0;
@@ -3124,7 +3124,7 @@ a.card-link:hover {
     animation: gradient-slide 2s ease infinite;
 }
 
-.ad-banner::after {
+.promo-banner::after {
     content: '';
     position: absolute;
     top: 0;
@@ -3136,7 +3136,7 @@ a.card-link:hover {
 }
 
 /* Конфетти частицы */
-.ad-banner .confetti {
+.promo-banner .confetti {
     position: absolute;
     width: 6px;
     height: 6px;
@@ -3146,55 +3146,55 @@ a.card-link:hover {
     opacity: 0;
 }
 
-.ad-banner .confetti:nth-child(1) { 
+.promo-banner .confetti:nth-child(1) { 
     left: 15%; 
     animation-delay: 0s; 
     background: #ff6b6b; 
     animation-name: confetti-fall-1;
 }
-.ad-banner .confetti:nth-child(2) { 
+.promo-banner .confetti:nth-child(2) { 
     left: 25%; 
     animation-delay: 0.8s; 
     background: #4ecdc4; 
     animation-name: confetti-fall-2;
 }
-.ad-banner .confetti:nth-child(3) { 
+.promo-banner .confetti:nth-child(3) { 
     left: 35%; 
     animation-delay: 1.6s; 
     background: #45b7d1; 
     animation-name: confetti-fall-3;
 }
-.ad-banner .confetti:nth-child(4) { 
+.promo-banner .confetti:nth-child(4) { 
     left: 45%; 
     animation-delay: 2.4s; 
     background: #96ceb4; 
     animation-name: confetti-fall-4;
 }
-.ad-banner .confetti:nth-child(5) { 
+.promo-banner .confetti:nth-child(5) { 
     left: 55%; 
     animation-delay: 3.2s; 
     background: #feca57; 
     animation-name: confetti-fall-5;
 }
-.ad-banner .confetti:nth-child(6) { 
+.promo-banner .confetti:nth-child(6) { 
     left: 65%; 
     animation-delay: 4s; 
     background: #ff9ff3; 
     animation-name: confetti-fall-6;
 }
-.ad-banner .confetti:nth-child(7) { 
+.promo-banner .confetti:nth-child(7) { 
     left: 75%; 
     animation-delay: 4.8s; 
     background: #54a0ff; 
     animation-name: confetti-fall-7;
 }
-.ad-banner .confetti:nth-child(8) { 
+.promo-banner .confetti:nth-child(8) { 
     left: 85%; 
     animation-delay: 5.6s; 
     background: #5f27cd; 
     animation-name: confetti-fall-8;
 }
-.ad-banner .confetti:nth-child(9) { 
+.promo-banner .confetti:nth-child(9) { 
     left: 95%; 
     animation-delay: 6.4s; 
     background: #00d2d3; 
@@ -3301,13 +3301,13 @@ a.card-link:hover {
     100% { top: 115%; left: 100%; opacity: 0; transform: scale(0) translateX(50px); }
 }
 
-.ad-banner:hover {
+.promo-banner:hover {
     box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
     border-color: #bfdbfe;
     animation-play-state: paused;
 }
 
-.ad-banner-content {
+.promo-banner-content {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -3315,12 +3315,12 @@ a.card-link:hover {
     z-index: 1;
 }
 
-.ad-banner-icon {
+.promo-banner-icon {
     text-align: center;
     margin-bottom: 0.5rem;
 }
 
-.ad-banner-icon img {
+.promo-banner-icon img {
     width: 72px;
     height: 72px;
     border-radius: 50%;
@@ -3330,17 +3330,17 @@ a.card-link:hover {
     background: #ffffff;
 }
 
-.ad-banner-icon img:hover {
+.promo-banner-icon img:hover {
     transform: scale(1.05) rotate(2deg);
     border-color: #e0e7ff;
     box-shadow: 0 12px 35px rgba(99, 102, 241, 0.2);
 }
 
-.ad-banner-text {
+.promo-banner-text {
     text-align: center;
 }
 
-.ad-banner-title {
+.promo-banner-title {
     color: #1f2937;
     font-size: 1.25rem;
     font-weight: 800;
@@ -3352,7 +3352,7 @@ a.card-link:hover {
     background-clip: text;
 }
 
-.ad-banner-description {
+.promo-banner-description {
     color: #6b7280;
     font-size: 0.95rem;
     line-height: 1.5;
@@ -3360,17 +3360,17 @@ a.card-link:hover {
     font-weight: 500;
 }
 
-.ad-banner-description strong {
+.promo-banner-description strong {
     color: #374151;
     font-weight: 700;
 }
 
-.ad-banner-action {
+.promo-banner-action {
     text-align: center;
     margin-top: 0.5rem;
 }
 
-.ad-banner-button {
+.promo-banner-button {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -3391,7 +3391,7 @@ a.card-link:hover {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.ad-banner-button::before {
+.promo-banner-button::before {
     content: '';
     position: absolute;
     top: 0;
@@ -3402,11 +3402,11 @@ a.card-link:hover {
     transition: left 0.6s ease;
 }
 
-.ad-banner-button:hover::before {
+.promo-banner-button:hover::before {
     left: 100%;
 }
 
-.ad-banner-button:hover {
+.promo-banner-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
     background: linear-gradient(135deg, #5b21b6 0%, #7c3aed 100%);
@@ -3414,11 +3414,11 @@ a.card-link:hover {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.ad-banner-button:active {
+.promo-banner-button:active {
     transform: translateY(0);
 }
 
-.ad-banner-button-icon {
+.promo-banner-button-icon {
     font-size: 1.2rem;
     animation: rocket-float 2s ease-in-out infinite;
 }
@@ -3435,7 +3435,7 @@ a.card-link:hover {
     }
 }
 
-.ad-banner-badge {
+.promo-banner-badge {
     position: absolute;
     top: 0.75rem;
     right: 0.75rem;
@@ -3451,26 +3451,26 @@ a.card-link:hover {
 
 /* Адаптивность для рекламного баннера */
 @media (max-width: 768px) {
-    .ad-banner {
+    .promo-banner {
         padding: 1.25rem;
         margin-bottom: 1.5rem;
         border-radius: 14px;
     }
     
-    .ad-banner-title {
+    .promo-banner-title {
         font-size: 1.1rem;
     }
     
-    .ad-banner-description {
+    .promo-banner-description {
         font-size: 0.9rem;
     }
     
-    .ad-banner-button {
+    .promo-banner-button {
         padding: 0.7rem 1.4rem;
         font-size: 0.85rem;
     }
     
-    .ad-banner-icon img {
+    .promo-banner-icon img {
         width: 64px;
         height: 64px;
         border-radius: 50%;
@@ -3478,30 +3478,30 @@ a.card-link:hover {
 }
 
 @media (max-width: 480px) {
-    .ad-banner {
+    .promo-banner {
         padding: 1rem;
         margin-bottom: 1rem;
         border-radius: 12px;
     }
     
-    .ad-banner-content {
+    .promo-banner-content {
         gap: 1rem;
     }
     
-    .ad-banner-title {
+    .promo-banner-title {
         font-size: 1rem;
     }
     
-    .ad-banner-description {
+    .promo-banner-description {
         font-size: 0.85rem;
     }
     
-    .ad-banner-button {
+    .promo-banner-button {
         padding: 0.6rem 1.2rem;
         font-size: 0.8rem;
     }
     
-    .ad-banner-icon img {
+    .promo-banner-icon img {
         width: 56px;
         height: 56px;
         border-radius: 50%;
