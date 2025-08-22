@@ -2189,6 +2189,16 @@ a.card-link:hover {
     box-shadow: 0 4px 12px rgba(25, 118, 210, 0.2);
 }
 
+/* Page Divider */
+.page-divider {
+    margin: 2rem 0;
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #e3f2fd, #bbdefb, #e3f2fd, transparent);
+    border-radius: 1px;
+    opacity: 0.8;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .post-layout {

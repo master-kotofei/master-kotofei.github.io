@@ -33,13 +33,7 @@
                         <span class="view-count-number" data-post-id="{{ .File.UniqueID }}">0</span> просмотров
                     </span>
                 </div>
-                {{ if .Params.tags }}
-                <div class="post-tags">
-                    {{ range .Params.tags }}
-                    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
-                    {{ end }}
-                </div>
-                {{ end }}
+
             </div>
             </header>
             
@@ -57,6 +51,18 @@
             <div class="post-content">
                 {{ .Content }}
             </div>
+            
+            <!-- Page Divider -->
+            <hr class="page-divider">
+            
+            <!-- Post Tags -->
+            {{ if .Params.tags }}
+            <div class="post-tags">
+                {{ range .Params.tags }}
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
             
             <!-- Share Buttons -->
             {{ partial "share-buttons.html" . }}
