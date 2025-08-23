@@ -64,7 +64,7 @@ theme = "vpn-guru-theme"
   
   # Параметры рекламного блока
   [params.ads]
-    enabled = true
+    enabled = false
     title = "Лучший VPN для России"
     text = "**X Rocket VPN** - единственный Телеграм-бот, реально работающий в России"
     iconUrl = "https://imagestoring.fra1.cdn.digitaloceanspaces.com/71ED88D8-53F8-4CFA-A495-0E558C8F7424.png"
