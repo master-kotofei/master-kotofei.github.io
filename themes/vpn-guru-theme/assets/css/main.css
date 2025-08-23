@@ -88,6 +88,33 @@ a.underline:hover {
     color: #1565c0;
 }
 
+/* Article content links - add underline for links in post content */
+.post-content a {
+    text-decoration: underline;
+    text-decoration-color: #1976d2;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: all 0.3s ease;
+}
+
+.post-content a:hover {
+    text-decoration-color: #1565c0;
+    color: #1565c0;
+}
+
+/* Special styling for external links in post content */
+.post-content a[href^="http"]:not([href*="localhost"]):not([href*="127.0.0.1"]) {
+    text-decoration: underline;
+    text-decoration-color: #1976d2;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+.post-content a[href^="http"]:not([href*="localhost"]):not([href*="127.0.0.1"]):hover {
+    text-decoration-color: #1565c0;
+    color: #1565c0;
+}
+
 /* Card links */
 a.card-link {
     display: block;
