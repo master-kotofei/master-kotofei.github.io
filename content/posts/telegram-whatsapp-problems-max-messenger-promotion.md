@@ -7,7 +7,7 @@ categories = ['Разное', 'WhatsApp', 'Telegram']
 tags = ['Блокировки', '2025', 'Актуально', 'Russia', 'Россия', 'WhatsApp', 'Telegram', 'MAX']
 +++
 
-![Telegram и WhatsApp под ударом: случайность или стратегия на фоне продвижения MAX?](https://imagestoring.fra1.cdn.digitaloceanspaces.com/1024687E-E6F4-495E-B9C5-5FF857B3ADB4.png)
+![Telegram и WhatsApp под ударом: случайность или стратегия на фоне продвижения MAX?](https://imagestoring.fra1.cdn.digitaloceanspaces.com/FF70D5E4-42F3-4ADC-9BA7-E90927490C8A.png)
 
 В последние месяцы российские пользователи все чаще сталкиваются с проблемами в работе популярных мессенджеров Telegram и WhatsApp. Одновременно с этим власти активно продвигают отечественный мессенджер MAX. Совпадение это или продуманная стратегия?
 
