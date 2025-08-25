@@ -4,7 +4,7 @@
   
   {{/* Главная страница */}}
   <url>
-    <loc>{{ printf "%s/" .Site.BaseURL }}</loc>
+    <loc>{{ .Site.BaseURL }}</loc>
     <lastmod>{{ now.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -12,7 +12,7 @@
   
   {{/* Страница постов */}}
   <url>
-    <loc>{{ printf "%s/posts/" $.Site.BaseURL }}</loc>
+    <loc>{{ printf "%sposts/" $.Site.BaseURL }}</loc>
     <lastmod>{{ now.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.8</priority>
@@ -20,7 +20,7 @@
   
   {{/* Страница тегов */}}
   <url>
-    <loc>{{ printf "%s/tags/" $.Site.BaseURL }}</loc>
+    <loc>{{ printf "%stags/" $.Site.BaseURL }}</loc>
     <lastmod>{{ now.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -28,7 +28,7 @@
   
   {{/* Страница категорий */}}
   <url>
-    <loc>{{ printf "%s/categories/" $.Site.BaseURL }}</loc>
+    <loc>{{ printf "%scategories/" $.Site.BaseURL }}</loc>
     <lastmod>{{ now.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -37,7 +37,7 @@
   {{/* Страницы постов */}}
   {{- range where .Site.RegularPages "Type" "posts" }}
   <url>
-    <loc>{{ printf "%s%s" $.Site.BaseURL .RelPermalink }}</loc>
+    <loc>{{ .Permalink }}</loc>
     {{- if not .Lastmod.IsZero }}
     <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     {{- end }}
