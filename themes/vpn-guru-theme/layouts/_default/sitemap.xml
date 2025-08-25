@@ -4,7 +4,7 @@
   
   {{/* Главная страница */}}
   <url>
-    <loc>{{ .Site.BaseURL }}</loc>
+    <loc>{{ printf "%s/" .Site.BaseURL }}</loc>
     <lastmod>{{ now.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -12,7 +12,7 @@
   
   {{/* Страница постов */}}
   <url>
-    <loc>{{ printf "%sposts/" $.Site.BaseURL }}</loc>
+    <loc>{{ printf "%s/posts/" $.Site.BaseURL }}</loc>
     <lastmod>{{ now.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.8</priority>
@@ -20,7 +20,7 @@
   
   {{/* Страница тегов */}}
   <url>
-    <loc>{{ printf "%stags/" $.Site.BaseURL }}</loc>
+    <loc>{{ printf "%s/tags/" $.Site.BaseURL }}</loc>
     <lastmod>{{ now.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -28,7 +28,7 @@
   
   {{/* Страница категорий */}}
   <url>
-    <loc>{{ printf "%scategories/" $.Site.BaseURL }}</loc>
+    <loc>{{ printf "%s/categories/" $.Site.BaseURL }}</loc>
     <lastmod>{{ now.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -51,7 +51,7 @@
     {{- $tagSlug := .Page.Title | urlize }}
     {{- if not (hasPrefix $tagSlug "%") }}
   <url>
-    <loc>{{ printf "%stags/%s/" $.Site.BaseURL $tagSlug }}</loc>
+    <loc>{{ printf "%s/tags/%s/" $.Site.BaseURL $tagSlug }}</loc>
     <lastmod>{{ now.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
@@ -64,7 +64,7 @@
     {{- $catSlug := .Page.Title | urlize }}
     {{- if not (hasPrefix $catSlug "%") }}
   <url>
-    <loc>{{ printf "%scategories/%s/" $.Site.BaseURL $catSlug }}</loc>
+    <loc>{{ printf "%s/categories/%s/" $.Site.BaseURL $catSlug }}</loc>
     <lastmod>{{ now.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>

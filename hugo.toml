@@ -1,4 +1,4 @@
-baseURL = "https://blog.apps4me.ru/"
+baseURL = "https://blog.apps4me.ru"
 languageCode = "ru"
 title = "Apps 4me"
 theme = "vpn-guru-theme"
