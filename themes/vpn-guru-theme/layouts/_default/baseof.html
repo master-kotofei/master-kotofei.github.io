@@ -1,58 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "ru" }}">
 <head>
-    <!-- Anti-Block Script - Multiple Domain Strategy -->
-    <script>
-        (function() {
-            // Список резервных доменов для обхода блокировок
-            const backupDomains = [
-                'https://blog.apps4me.ru',
-                'https://vpn-guru.github.io'
-            ];
-            
-            // Функция проверки доступности домена
-            function checkDomainAvailability(url) {
-                return new Promise((resolve) => {
-                    const img = new Image();
-                    img.onload = () => resolve(true);
-                    img.onerror = () => resolve(false);
-                    img.src = url + '/favicon.ico?' + Date.now();
-                    setTimeout(() => resolve(false), 3000);
-                });
-            }
-            
-            // Основная логика обхода блокировок
-            async function bypassBlocking() {
-                const currentHost = window.location.hostname;
-                const currentPath = window.location.pathname + window.location.search + window.location.hash;
-                
-                // Если мы уже на одном из резервных доменов, не делаем редирект
-                if (backupDomains.some(domain => domain.includes(currentHost))) {
-                    return;
-                }
-                
-                // Пробуем найти доступный домен
-                for (let domain of backupDomains) {
-                    try {
-                        const isAvailable = await checkDomainAvailability(domain);
-                        if (isAvailable) {
-                            // Редирект на доступный домен
-                            window.location.href = domain + currentPath;
-                            return;
-                        }
-                    } catch (e) {
-                        continue;
-                    }
-                }
-                
-                // Если все домены недоступны, показываем сообщение
-                console.log('Все резервные домены недоступны');
-            }
-            
-            // Запускаем обход блокировок с задержкой
-            setTimeout(bypassBlocking, 1500);
-        })();
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
@@ -73,7 +21,6 @@
     
     <!-- Google Analytics -->
     {{ partial "google-analytics.html" . }}
-    
 </head>
 <body>
     <!-- Header -->

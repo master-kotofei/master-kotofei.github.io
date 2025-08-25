@@ -9,9 +9,9 @@ min_version = "0.80.0"
 
 [author]
   name = "VPN Guru Team"
-  homepage = "https://vpn-guru.github.io"
+  homepage = "https://blog.apps4me.ru"
 
 [original]
   name = "VPN Guru Theme"
-  homepage = "https://vpn-guru.github.io"
+  homepage = "https://blog.apps4me.ru"
   repo = "https://github.com/yourusername/vpn-guru-theme"
