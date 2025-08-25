@@ -1,6 +1,6 @@
 baseURL = "https://blog.apps4me.ru/"
 languageCode = "ru"
-title = "VPN Guru"
+title = "Apps 4me"
 theme = "vpn-guru-theme"
 
 # Настройки URL для более читаемых ссылок
@@ -41,7 +41,7 @@ theme = "vpn-guru-theme"
 
 # Отключаем автоматическую генерацию карты сайта для таксономий
 [params]
-  subtitle = 'Лучший блог о ВПН'
+  subtitle = 'Лучший блог о сервисах и приложениях'
   ShowShareButtons = true
   ShowReadingTime = true
   ShowWordCount = false
@@ -49,7 +49,7 @@ theme = "vpn-guru-theme"
   TocOpen = false
   ShowBreadCrumbs = false
   ShowPostNavLinks = true
-  author = ["vpnguru"]
+  author = ["App Master"]
   
   # Google Analytics ID
   googleAnalytics = "G-ZXWCMEHEJC"
