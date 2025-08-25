@@ -51,7 +51,7 @@
     {{- $tagSlug := .Page.Title | urlize }}
     {{- if not (hasPrefix $tagSlug "%") }}
   <url>
-    <loc>{{ printf "%s/tags/%s/" $.Site.BaseURL $tagSlug }}</loc>
+    <loc>{{ printf "%stags/%s/" $.Site.BaseURL $tagSlug }}</loc>
     <lastmod>{{ now.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
@@ -64,7 +64,7 @@
     {{- $catSlug := .Page.Title | urlize }}
     {{- if not (hasPrefix $catSlug "%") }}
   <url>
-    <loc>{{ printf "%s/categories/%s/" $.Site.BaseURL $catSlug }}</loc>
+    <loc>{{ printf "%scategories/%s/" $.Site.BaseURL $catSlug }}</loc>
     <lastmod>{{ now.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>

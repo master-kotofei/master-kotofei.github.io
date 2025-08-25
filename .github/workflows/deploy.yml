@@ -24,7 +24,7 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      # Настраиваем Pages и получаем корректный base_url
+      # Настраиваем Pages (baseURL будет переопределен нами принудительно)
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -36,10 +36,10 @@ jobs:
           hugo-version: '0.148.2'
           extended: true
 
-      # Собираем; прокидываем baseURL от Pages для корректных ссылок
+      # Собираем; принудительно используем HTTPS baseURL
       - name: Build
         run: |
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --minify --baseURL "https://blog.apps4me.ru/"
 
       # Публикуем артефакт для деплоя Pages
       - name: Upload artifact
