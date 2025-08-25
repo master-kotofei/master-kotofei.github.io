@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "ru" }}">
 <head>
+    <!-- Smart Redirect Script with Delay - Avoid CNAME Loop -->
+    <script>
+        // Редирект с задержкой для SEO и лучшего UX
+        setTimeout(() => {
+            if (window.location.hostname !== 'blog.apps4me.ru') {
+                window.location.href = 'https://blog.apps4me.ru' + window.location.pathname + window.location.search + window.location.hash;
+            }
+        }, 1000); // Задержка 1 секунда
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
@@ -21,15 +30,6 @@
     
     <!-- Google Analytics -->
     {{ partial "google-analytics.html" . }}
-    
-    <!-- Smart Redirect Script - Avoid CNAME Loop -->
-    <script>
-        // Проверяем, находимся ли мы на старом домене
-        if (window.location.hostname !== 'blog.apps4me.ru') {
-            // Редирект только если мы НЕ на целевом домене
-            window.location.href = 'https://blog.apps4me.ru' + window.location.pathname + window.location.search + window.location.hash;
-        }
-    </script>
     
 </head>
 <body>
