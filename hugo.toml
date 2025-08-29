@@ -51,8 +51,6 @@ theme = "vpn-guru-theme"
   ShowPostNavLinks = true
   author = ["App Master"]
   
-  # Google Analytics ID
-  googleAnalytics = "G-ZXWCMEHEJC"
   
   # Яндекс.Метрика ID
   yandexMetrika = "103785798"
