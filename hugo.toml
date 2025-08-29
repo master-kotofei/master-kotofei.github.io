@@ -64,7 +64,7 @@ theme = "vpn-guru-theme"
   [params.ads]
     enabled = true
     title = "Лучшая анонимность в России"
-    text = "**X Rocket** - качественный Телеграм-бот, реально работающий в России"
+    text = "**X Rocket VPN** - качественный Телеграм-бот, реально работающий в России"
     iconUrl = "https://imagestoring.fra1.cdn.digitaloceanspaces.com/71ED88D8-53F8-4CFA-A495-0E558C8F7424.png"
     targetUrl = "https://t.me/X_Rocket_VPN_bot?start=ref-b-9"
     buttonText = "Попробовать сейчас"
