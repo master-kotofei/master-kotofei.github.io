@@ -39,7 +39,7 @@ jobs:
       # Собираем; принудительно используем HTTPS baseURL
       - name: Build
         run: |
-          hugo --minify --baseURL "https://blog.apps4me.ru/"
+          hugo --minify --baseURL "https://security-master.github.io"
 
       # Публикуем артефакт для деплоя Pages
       - name: Upload artifact

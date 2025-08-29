@@ -1,6 +1,6 @@
-baseURL = "https://blog.apps4me.ru"
+baseURL = "https://security-master.github.io"
 languageCode = "ru"
-title = "Apps 4me"
+title = "Security Master"
 theme = "vpn-guru-theme"
 
 # Настройки URL для более читаемых ссылок

@@ -7,7 +7,7 @@ Allow: /categories/
 Allow: /tags/
 
 # Sitemap location (now valid and properly formatted)
-Sitemap: https://blog.apps4me.ru/sitemap.xml
+Sitemap: https://security-master.github.io/sitemap.xml
 
 # Crawl delay (optional, in seconds)
 Crawl-delay: 1

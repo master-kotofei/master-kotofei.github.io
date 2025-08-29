@@ -66,9 +66,9 @@
 
 После настройки русские теги будут автоматически преобразовываться:
 
-- `https://blog.apps4me.ru/tags/%D1%86%D0%B5%D0%BD%D0%B7%D1%83%D1%80%D0%B0/`
+- `https://security-master.github.io/tags/%D1%86%D0%B5%D0%BD%D0%B7%D1%83%D1%80%D0%B0/`
 - ↓
-- `https://blog.apps4me.ru/tags/tsenzura/`
+- `https://security-master.github.io/tags/tsenzura/`
 
 ## Перезапуск
 
