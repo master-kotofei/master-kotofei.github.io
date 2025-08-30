@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [YouTube не будет работать в России через месяц: что делать и как подготовиться](content/posts/youtube-russia-block-vpn-solution.md)
 - [Как играть в мобильные игры на иностранных серверах?](content/posts/mobile-games-foreign-servers-vpn.md)
 - [Какая звонилка лучше работает через ВПН? Telegram, WhatsApp или Viber? Анализ и сравнение](content/posts/vpn-messenger-calls-comparison.md)
 - [Как Netflix и YouTube ненавидят VPN, но обожают, когда ты их используешь](content/posts/netflix-youtube-vpn-paradox.md)
