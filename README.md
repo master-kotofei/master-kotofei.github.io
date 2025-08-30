@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Такого суверенного интернета нет даже в Китае](content/posts/takogo-suverennogo-interneta-net-dazhe-v-kitae.md)
 - [Когда цензура переходит все границы: как защитить свой интернет](content/posts/kogda-tsenzura-perehodit-vse-granitsy-kak-zaschitit-svoj-internet.md)
 - [YouTube не будет работать в России через месяц: что делать и как подготовиться](content/posts/youtube-russia-block-vpn-solution.md)
 - [Как играть в мобильные игры на иностранных серверах?](content/posts/mobile-games-foreign-servers-vpn.md)
