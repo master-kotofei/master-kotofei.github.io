@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Лучшие VPN-боты Telegram в 2025 году, которые работают в России](content/posts/best-telegram-vpn-bots-2025-russia.md)
 - [Зачем российским бабушкам VPN?](content/posts/vpn-for-russian-grandmas.md)
 - [Такого суверенного интернета нет даже в Китае](content/posts/takogo-suverennogo-interneta-net-dazhe-v-kitae.md)
 - [Когда цензура переходит все границы: как защитить свой интернет](content/posts/kogda-tsenzura-perehodit-vse-granitsy-kak-zaschitit-svoj-internet.md)
