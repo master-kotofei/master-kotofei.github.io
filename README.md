@@ -1,15 +1,58 @@
-# Hugo + GitHub Pages (Actions)
+# VPN Guru Blog README
 
-Автодеплой блога Hugo на GitHub Pages через GitHub Actions.
+## Список постов
 
-## Быстрый старт
-
-- Пишите посты в `content/posts/*.md`
-    - Пример: hugo new content content/posts/<name>.md
-- Коммит → пуш в `main`
-- GitHub Actions сам соберёт и задеплоит сайт
-
-## Локально
-
-```bash
-hugo server -D
+- [50 ТОП лучших бесплатных VPN для ПК Windows в 2025 году 🔐💻](content/posts/50-top-free-vpn-windows-2025.md)
+- [X Rocket VPN - лучший телеграм-бот для ВПН в России на 2025 год](content/posts/x-rocket-vpn-telegram-bot-russia-2025.md)
+- [VPN в российском App Store: когда РКН играет в «доброго дядюшку»](content/posts/rkn-plays-good-uncle-vpn-apps-russia.md)
+- [VPN для стриминга: разблокируем Netflix, YouTube и другие платформы](content/posts/vpn-for-streaming-unlock-netflix-youtube.md)
+- [VPN и закон: легальность использования в России и других странах](content/posts/vpn-legal-status-russia-worldwide.md)
+- [VPN который реально сейчас работает в России. Это без ложной скромности!](content/posts/working-vpn-russia-2025.md)
+- [VPN не работает в России - как восстановить подключение за 3 минуты](content/posts/vpn-ne-rabotaet-v-rossii-vosstanovlenie.md)
+- [VPN не работает в России — как восстановить подключение за 2 минуты](content/posts/vpn-ne-rabotaet-v-rossii-2-minuty.md)
+- [VPN-бот в Telegram: современное решение для обхода блокировок в России](content/posts/telegram-vpn-bot-vless-russia.md)
+- [WhatsApp всё! Блокирование популярного мессенджера уже началось в России. Как решить проблему блокировки](content/posts/whatsapp-blokirovka-rossiya-reshenie.md)
+- [В России планируют запретить голосовые звонки в WhatsApp и Telegram: что делать пользователям](content/posts/ban-voice-calls-messengers-in-russia.md)
+- [Доступ к Veo 3 из России: Полное руководство по обходу блокировки](content/posts/veo-3-russia-access-vpn-guide.md)
+- [Закон Яровой: Его влияние на Рунет и последствия](content/posts/yarovaya-law-runet-impact.md)
+- [Инстаграм не работает с ВПН? Вот как исправить](content/posts/instagram-blokirovka-russia-reshenie.md)
+- [Какая звонилка лучше работает через ВПН? Telegram, WhatsApp или Viber? Анализ и сравнение](content/posts/vpn-messenger-calls-comparison.md)
+- [Как Netflix и YouTube ненавидят VPN, но обожают, когда ты их используешь](content/posts/netflix-youtube-vpn-paradox.md)
+- [Как играть в мобильные игры на иностранных серверах?](content/posts/mobile-games-foreign-servers-vpn.md)
+- [Как смотреть Ютуб в России](content/posts/kak-smotret-youtube-v-rossii.md)
+- [Как смотреть Ютуб в России в 2025 году](content/posts/youtube-russia-2025-guide.md)
+- [Лучший ВПН для iPhone и Android, который реально работает в России](content/posts/best-vpn-iphone-android-russia-working.md)
+- [Не работает WhatsApp на Android? Вот как это исправить](content/posts/whatsapp-android-fix-guide.md)
+- [Новая разработка SplitHTTP от проекта xray-core: Почему это будущее VPN-приложений в России](content/posts/splithttp-xray-core-future-vpn-russia.md)
+- [Последние новости из мира ВПН в России: что изменилось в 2025 году](content/posts/vpn-news-russia-2025.md)
+- [Почему VPN-бот в Telegram — это будущее безопасного интернета в России](content/posts/telegram-vpn-bot-future-russia.md)
+- [Почему РКН блокирует сервисы более эффективно чем в Китае](content/posts/russian-internet-censorship-vs-china-effectiveness.md)
+- [Почему партнерки VPN-ботов — горячая тема 2025 года](content/posts/telegram-vpn-affiliate-earnings.md)
+- [Почему я никогда не буду использовать мессенджер MAX и вам не советую 🚫](content/posts/why-i-never-use-max-messenger.md)
+- [Перестал работать YouTube в августе 2025: рабочие способы смотреть (ютуб)](content/posts/youtube-august-2025-block.md)
+- [Перестал работать YouTube в августе 2025? Как быстро обойти блокировку и смотреть видео](content/posts/youtube-ne-rabotaet-august-2025-kak-obojti-blokirovku.md)
+- [Подробный FAQ по ВПН: Все что вы хотели знать, но боялись спросить](content/posts/vpn-faq-complete-guide.md)
+- [Проблемы с VPN и их решения: устранение неполадок](content/posts/vpn-problems-solutions-troubleshooting.md)
+- [Протокол VLESS: что это такое и история его развития](content/posts/vless-vpn-protocol-guide.md)
+- [Реклама ВПН запрещена. Скоро вы не сможете узнавать о рабочих решениях. Помогаем друг другу!](content/posts/vpn-ads-banned-community-help.md)
+- [Сказка: Как РКН за VPN охотился](content/posts/rkn-vs-vpn-fairy-tale.md)
+- [Сравнение и обзор 3-х лучших VPN-ботов в Telegram](content/posts/top-3-vpn-bots-telegram-review.md)
+- [Суверенный интернет в РФ: что это такое и с чем его едят?](content/posts/sovereign-internet-russia-runet.md)
+- [ТОП 5 лучших VPN-ботов в Telegram 2025: полный обзор и сравнение](content/posts/top-5-vpn-botov-telegram-2025-obzor-sravnenie.md)
+- [ТОП бесплатных VPN для Андроид в России 2025: Защита и обход блокировок](content/posts/top-free-vpn-android-russia-2025.md)
+- [ТОП-3 работающих ВПН в России: обзор и сравнение](content/posts/top-3-working-vpn-russia-2025.md)
+- [Telegram и WhatsApp под ударом: случайность или стратегия на фоне продвижения MAX?](content/posts/telegram-whatsapp-problems-max-messenger-promotion.md)
+- [Топ 3 платных VPN-ботов Telegram, которые гарантированно работают сейчас в России](content/posts/top-3-telegram-vpn-bots-russia.md)
+- [Топ-10 лучших VPN сервисов для России в 2025](content/posts/top-10-vpn-russia-2025.md)
+- [Топ-22 лучших бесплатных VPN для ПК Windows в 2025 году](content/posts/top-22-free-vpn-windows-2025.md)
+- [Trojan VPN: современный протокол для безопасного интернета](content/posts/trojan-vpn-protocol-not-virus.md)
+- ["Товарищ майор" следит за тобой: Почему VPN нужен каждому россиянину в 2025 году](content/posts/vpn-russia-privacy-surveillance-2025.md)
+- [HTTPUpgrade: новая эра обхода блокировок в России](content/posts/httpupgrade-russia-vpn-evolution.md)
+- [ChatGPT 5.0 в России: Как использовать без ограничений с помощью Телеграм-бота](content/posts/chatgpt-5-russia-telegram-bot-vpn.md)
+- [Что происходит с ВПН в России: полный обзор текущей ситуации](content/posts/vpn-russia-situation-2025.md)
+- [Что и требовалось доказать! Ни о какой приватности в мессенджере MAX не может быть и речи.](content/posts/max-messenger-privacy-myth-exposed.md)
+- [Цифровая свобода в России - миф!](content/posts/digital-freedom-russia-myth.md)
+- [💰 Как заработать большие деньги на партнерской программе Телеграмм-бота?](content/posts/telegram-bot-affiliate-program-big-money.md)
+- [👋 Добро пожаловать в блог о VPN и цифровой свободе!](content/posts/welcome-post.md)
+- [Instagram не работает с обычными VPN в России: как решить проблему?](content/posts/instagram-vpn-russia-vless-solution.md)
+- [Бесплатные VPN vs платные: что выбрать в 2025](content/posts/free-vs-paid-vpn-2025-guide.md)
