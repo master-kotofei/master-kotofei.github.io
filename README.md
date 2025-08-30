@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Когда цензура переходит все границы: как защитить свой интернет](content/posts/kogda-tsenzura-perehodit-vse-granitsy-kak-zaschitit-svoj-internet.md)
 - [YouTube не будет работать в России через месяц: что делать и как подготовиться](content/posts/youtube-russia-block-vpn-solution.md)
 - [Как играть в мобильные игры на иностранных серверах?](content/posts/mobile-games-foreign-servers-vpn.md)
 - [Какая звонилка лучше работает через ВПН? Telegram, WhatsApp или Viber? Анализ и сравнение](content/posts/vpn-messenger-calls-comparison.md)
