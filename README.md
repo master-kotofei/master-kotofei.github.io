@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Будущее VPN: переход от классического туннелирования к протоколам следующего поколения](content/posts/future-vpn-next-generation-protocols.md)
 - [Лучшие VPN-боты Telegram в 2025 году, которые работают в России](content/posts/best-telegram-vpn-bots-2025-russia.md)
 - [Зачем российским бабушкам VPN?](content/posts/vpn-for-russian-grandmas.md)
 - [Такого суверенного интернета нет даже в Китае](content/posts/takogo-suverennogo-interneta-net-dazhe-v-kitae.md)
