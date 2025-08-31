@@ -1,7 +1,5 @@
 # VPN Guru Blog README
 
-
-
 ## Список постов
 
 - [VPN в России 2025: как адаптироваться к новым реалиям интернета](content/posts/vpn-russia-2025-new-challenges.md)
