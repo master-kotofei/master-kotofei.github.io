@@ -1,7 +1,7 @@
 // Main JavaScript file for VPN Guru theme
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for anchor links
+    // Smooth scrolling for anchor links with header offset
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
     anchorLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -10,9 +10,18 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+                // Get header height for offset calculation
+                const header = document.querySelector('.site-header');
+                const headerHeight = header ? header.offsetHeight : 0;
+                const additionalOffset = 20; // Extra spacing for better visibility
+                
+                // Calculate target position with offset
+                const targetPosition = targetElement.offsetTop - headerHeight - additionalOffset;
+                
+                // Smooth scroll to target position
+                window.scrollTo({
+                    top: Math.max(0, targetPosition),
+                    behavior: 'smooth'
                 });
             }
         });
@@ -88,6 +97,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
     
     if (tocLinks.length > 0 && headings.length > 0) {
+        // Calculate header height for better intersection detection
+        const header = document.querySelector('.site-header');
+        const headerHeight = header ? header.offsetHeight : 80;
+        const rootMargin = `-${headerHeight + 20}px 0px -70% 0px`;
+        
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -103,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         }, {
-            rootMargin: '-20% 0px -70% 0px'
+            rootMargin: rootMargin
         });
 
         headings.forEach(heading => {
@@ -126,4 +140,45 @@ document.addEventListener('DOMContentLoaded', function() {
         // Hide the toggle button since TOC is always expanded
         tocToggle.style.display = 'none';
     }
+    
+    // Handle direct anchor links on page load
+    function adjustScrollForAnchor() {
+        const hash = window.location.hash;
+        if (hash) {
+            const targetElement = document.querySelector(hash);
+            if (targetElement) {
+                // Wait a moment for page to settle, then adjust scroll
+                setTimeout(() => {
+                    const header = document.querySelector('.site-header');
+                    const headerHeight = header ? header.offsetHeight : 0;
+                    const additionalOffset = 20;
+                    
+                    const targetPosition = targetElement.offsetTop - headerHeight - additionalOffset;
+                    
+                    window.scrollTo({
+                        top: Math.max(0, targetPosition),
+                        behavior: 'smooth'
+                    });
+                }, 100);
+            }
+        }
+    }
+    
+    // Adjust scroll on page load
+    adjustScrollForAnchor();
+    
+    // Also handle browser navigation (back/forward with hash)
+    window.addEventListener('hashchange', adjustScrollForAnchor);
+    
+    // Handle window resize (header height might change)
+    let resizeTimeout;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            // Re-adjust scroll position if we're at an anchor
+            if (window.location.hash) {
+                adjustScrollForAnchor();
+            }
+        }, 150);
+    });
 });
