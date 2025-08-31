@@ -1,7 +1,26 @@
 # VPN Guru Blog README
 
+## Разработка
+
+### Запуск в режиме разработки (без аналитики)
+
+Для локальной разработки создан файл `hugo.local.toml` с отключенной Яндекс.Метрикой.
+
+**Запуск сервера разработки:**
+```bash
+hugo server --config hugo.local.toml
+```
+
+Это запустит сайт на `http://localhost:1313` без подключения аналитических скриптов.
+
+**Обычная сборка (для продакшена):**
+```bash
+hugo --config hugo.toml
+```
+
 ## Список постов
 
+- [VPN в России 2025: как адаптироваться к новым реалиям интернета](content/posts/vpn-russia-2025-new-challenges.md)
 - [Будущее VPN: переход от классического туннелирования к протоколам следующего поколения](content/posts/future-vpn-next-generation-protocols.md)
 - [Лучшие VPN-боты Telegram в 2025 году, которые работают в России](content/posts/best-telegram-vpn-bots-2025-russia.md)
 - [Зачем российским бабушкам VPN?](content/posts/vpn-for-russian-grandmas.md)
