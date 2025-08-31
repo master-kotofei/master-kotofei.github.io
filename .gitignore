@@ -5,3 +5,4 @@
 
 # Локальный конфиг для разработки
 hugo.local.toml
+hugo-dev.log
