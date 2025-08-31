@@ -26,7 +26,7 @@ theme = "vpn-guru-theme"
       unsafe = true
 
 [pagination]
-  pagerSize = 10
+  pagerSize = 15
   
 # Включаем robots.txt
 # enableRobotsTXT = true
