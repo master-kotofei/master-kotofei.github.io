@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [ТОП 10 лучших VPN-ботов для Windows в 2025 году](content/posts/top-10-best-vpn-bots-windows.md)
 - [Как гарантировано заставить работать ВПН на Андроид в России. Советы от мастера](content/posts/android-vpn-russia-working-guide.md)
 - [VPN в России 2025: как адаптироваться к новым реалиям интернета](content/posts/vpn-russia-2025-new-challenges.md)
 - [Будущее VPN: переход от классического туннелирования к протоколам следующего поколения](content/posts/future-vpn-next-generation-protocols.md)
