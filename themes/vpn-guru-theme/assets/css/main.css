@@ -1193,11 +1193,8 @@ a.card-link:hover {
 
 /* Sidebar */
 .post-sidebar {
-    position: sticky;
-    top: 120px;
+    position: static;
     height: fit-content;
-    max-height: calc(100vh - 140px);
-    overflow-y: auto;
 }
 
 .toc-container {
@@ -1283,23 +1280,24 @@ a.card-link:hover {
 
 .toc-content {
     transition: max-height 0.3s ease, opacity 0.3s ease;
-    overflow: hidden;
-    max-height: none;
-    opacity: 1;
-}
-
-/* На десктопе оглавление развернуто по умолчанию */
-.toc-content.expanded {
-    max-height: none;
-    opacity: 1;
     overflow: visible;
+    max-height: none;
+    opacity: 1;
 }
 
-/* Состояние свернутого оглавления на десктопе */
+/* Оглавление всегда развернуто на всю длину */
+.toc-content,
+.toc-content.expanded {
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+}
+
+/* Убираем свернутое состояние */
 .toc-content:not(.expanded) {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible !important;
 }
 
 /* Анимация для плавного сворачивания */
@@ -2281,17 +2279,19 @@ a.card-link:hover {
     }
     
     /* На планшетах оглавление развернуто полностью */
-    .toc-content {
-        max-height: none;
-        overflow: visible;
-        transition: max-height 0.35s ease, opacity 0.35s ease;
+    .toc-content,
+    .toc-content.expanded {
+        max-height: none !important;
+        overflow: visible !important;
+        opacity: 1 !important;
+        transition: none !important;
     }
     
-    /* Состояние свернутого оглавления на планшетах */
+    /* Убираем свернутое состояние на планшетах */
     .toc-content:not(.expanded) {
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
+        max-height: none !important;
+        opacity: 1 !important;
+        overflow: visible !important;
     }
 }
 
@@ -2343,26 +2343,20 @@ a.card-link:hover {
         border-color: rgba(25, 118, 210, 0.3);
     }
     
-    /* По умолчанию оглавление свернуто на мобильных */
-    .toc-content {
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease, opacity 0.4s ease;
-    }
-    
+    /* На мобильных оглавление тоже развернуто полностью */
+    .toc-content,
     .toc-content.expanded {
-        max-height: none;
-        opacity: 1;
-        overflow: visible;
-        transition: max-height 0.4s ease, opacity 0.4s ease;
+        max-height: none !important;
+        opacity: 1 !important;
+        overflow: visible !important;
+        transition: none !important;
     }
     
-    /* Состояние свернутого оглавления на мобильных */
+    /* Убираем свернутое состояние на мобильных */
     .toc-content:not(.expanded) {
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
+        max-height: none !important;
+        opacity: 1 !important;
+        overflow: visible !important;
     }
     
     /* Компактные стили для ссылок оглавления */
@@ -2512,20 +2506,20 @@ a.card-link:hover {
         padding: 0.2rem 0.3rem;
     }
     
-    /* Улучшенная анимация для очень маленьких экранов */
-    .toc-content {
-        transition: max-height 0.5s ease, opacity 0.5s ease;
-    }
-    
+    /* На очень маленьких экранах оглавление тоже развернуто полностью */
+    .toc-content,
     .toc-content.expanded {
-        transition: max-height 0.5s ease, opacity 0.5s ease;
+        max-height: none !important;
+        opacity: 1 !important;
+        overflow: visible !important;
+        transition: none !important;
     }
     
-    /* Состояние свернутого оглавления на очень маленьких экранах */
+    /* Убираем свернутое состояние на очень маленьких экранах */
     .toc-content:not(.expanded) {
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
+        max-height: none !important;
+        opacity: 1 !important;
+        overflow: visible !important;
     }
 }
 
@@ -2545,8 +2539,7 @@ a.card-link:hover {
 
 /* Sidebar styles */
 .sidebar {
-	position: sticky;
-	top: 2rem;
+	position: static;
 	height: fit-content;
 	background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.92));
 	border-radius: 16px;

@@ -113,64 +113,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Table of Contents toggle functionality
+    // Table of Contents - always expanded
     const tocToggle = document.querySelector('.toc-toggle');
     const tocContent = document.querySelector('.toc-content');
     
     if (tocToggle && tocContent) {
-        // Check if device is mobile
-        const isMobile = window.innerWidth <= 768;
+        // TOC is always expanded on all devices
+        tocContent.classList.add('expanded');
+        tocToggle.classList.remove('collapsed');
+        tocToggle.setAttribute('aria-expanded', 'true');
         
-        // Initialize TOC state based on device type
-        if (isMobile) {
-            // On mobile devices, TOC is collapsed by default
-            tocContent.classList.remove('expanded');
-            tocToggle.classList.add('collapsed');
-            tocToggle.setAttribute('aria-expanded', 'false');
-        } else {
-            // On desktop devices, TOC is expanded by default
-            tocContent.classList.add('expanded');
-            tocToggle.classList.remove('collapsed');
-            tocToggle.setAttribute('aria-expanded', 'true');
-        }
-        
-        // Click handler for toggle button
-        tocToggle.addEventListener('click', function() {
-            const isExpanded = tocContent.classList.contains('expanded');
-            
-            if (isExpanded) {
-                // Collapse TOC
-                tocContent.classList.remove('expanded');
-                tocToggle.classList.add('collapsed');
-                tocToggle.setAttribute('aria-expanded', 'false');
-            } else {
-                // Expand TOC
-                tocContent.classList.add('expanded');
-                tocToggle.classList.remove('collapsed');
-                tocToggle.setAttribute('aria-expanded', 'true');
-            }
-        });
-        
-        // Handle window resize
-        let currentIsMobile = isMobile;
-        window.addEventListener('resize', function() {
-            const newIsMobile = window.innerWidth <= 768;
-            
-            if (newIsMobile !== currentIsMobile) {
-                currentIsMobile = newIsMobile;
-                
-                if (newIsMobile) {
-                    // Switched to mobile
-                    tocContent.classList.remove('expanded');
-                    tocToggle.classList.add('collapsed');
-                    tocToggle.setAttribute('aria-expanded', 'false');
-                } else {
-                    // Switched to desktop
-                    tocContent.classList.add('expanded');
-                    tocToggle.classList.remove('collapsed');
-                    tocToggle.setAttribute('aria-expanded', 'true');
-                }
-            }
-        });
+        // Hide the toggle button since TOC is always expanded
+        tocToggle.style.display = 'none';
     }
 });
