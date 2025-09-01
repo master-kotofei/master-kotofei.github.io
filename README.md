@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Не стоит скачивать приложения в App Store, их быстро удаляют. Привыкайте к Телеграм-ботам! Чем раньше, тем лучше!](content/posts/telegram-bots-vs-app-store-vpn.md)
 - [YouTube не работает в ВПН? Делаем просмотр стабильным на постоянной основе](content/posts/youtube-vpn-stable-streaming.md)
 - [Инстаграм не работает с ВПН? Решение проблем блокировки в России](content/posts/instagram-ne-rabotaet-s-vpn-reshenie-problem-blokirovki.md)
 - [Большинство VPN в поисковой выдаче — фейк. Тщательно подумайте, прежде чем купить](content/posts/fake-vpn-services-in-search-results.md)
