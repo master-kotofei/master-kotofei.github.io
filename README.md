@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [YouTube не работает в ВПН? Делаем просмотр стабильным на постоянной основе](content/posts/youtube-vpn-stable-streaming.md)
 - [Инстаграм не работает с ВПН? Решение проблем блокировки в России](content/posts/instagram-ne-rabotaet-s-vpn-reshenie-problem-blokirovki.md)
 - [Большинство VPN в поисковой выдаче — фейк. Тщательно подумайте, прежде чем купить](content/posts/fake-vpn-services-in-search-results.md)
 - [ТОП 10 лучших VPN-ботов для Windows в 2025 году](content/posts/top-10-best-vpn-bots-windows.md)
