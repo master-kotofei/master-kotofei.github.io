@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Инстаграм не работает с ВПН? Решение проблем блокировки в России](content/posts/instagram-ne-rabotaet-s-vpn-reshenie-problem-blokirovki.md)
 - [Большинство VPN в поисковой выдаче — фейк. Тщательно подумайте, прежде чем купить](content/posts/fake-vpn-services-in-search-results.md)
 - [ТОП 10 лучших VPN-ботов для Windows в 2025 году](content/posts/top-10-best-vpn-bots-windows.md)
 - [Как гарантировано заставить работать ВПН на Андроид в России. Советы от мастера](content/posts/android-vpn-russia-working-guide.md)
