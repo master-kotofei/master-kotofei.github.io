@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [7 лучших бесплатных VPN для телефона Андроид в сентябре 2025: грамотный обход блокировок](content/posts/best-7-free-vpn-android-2025.md)
 - [Не стоит скачивать приложения в App Store, их быстро удаляют. Привыкайте к Телеграм-ботам! Чем раньше, тем лучше!](content/posts/telegram-bots-vs-app-store-vpn.md)
 - [YouTube не работает в ВПН? Делаем просмотр стабильным на постоянной основе](content/posts/youtube-vpn-stable-streaming.md)
 - [Инстаграм не работает с ВПН? Решение проблем блокировки в России](content/posts/instagram-ne-rabotaet-s-vpn-reshenie-problem-blokirovki.md)
