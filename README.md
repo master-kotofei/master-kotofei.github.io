@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [VPN для всех устройств, который работает в России](content/posts/vpn-for-all-devices-in-russia.md)
 - [Как РКН случайно стал лучшим промоутером VPN-технологий в мире](content/posts/rkn-vpn-technologies-funny-development-story.md)
 - [Как использовать VPN на Windows 10/11 в сентябре 2025: полное руководство для российских пользователей](content/posts/vpn-windows-10-11-russia-2025-guide.md)
 - [Как смотреть YouTube в России. Решение на Сентябрь 2025 года](content/posts/kak-smotret-youtube-v-rossii-reshenie-na-sentjabr-2025-goda.md)
