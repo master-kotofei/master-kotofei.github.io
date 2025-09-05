@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Как использовать VPN на Windows 10/11 в сентябре 2025: полное руководство для российских пользователей](content/posts/vpn-windows-10-11-russia-2025-guide.md)
 - [Как смотреть YouTube в России. Решение на Сентябрь 2025 года](content/posts/kak-smotret-youtube-v-rossii-reshenie-na-sentjabr-2025-goda.md)
 - [X Rocket VPN: Десятилетний опыт в создании надёжных VPN-решений](content/posts/x-rocket-vpn-10-years-experience.md)
 - [7 лучших бесплатных VPN для телефона Андроид в сентябре 2025: грамотный обход блокировок](content/posts/best-7-free-vpn-android-2025.md)
