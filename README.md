@@ -2,6 +2,8 @@
 
 ## Список постов
 
+- [Не работают звонки в Telegram: причины и решения](content/posts/telegram-calls-not-working-solutions.md)
+- [Не работают звонки в WhatsApp: причины и способы решения проблемы](content/posts/whatsapp-calls-not-working-solutions.md)
 - [Топ лучших VPN-ботов Телеграм на сентябрь 2025 года](content/posts/top-vpn-bots-telegram-september-2025.md)
 - [Как смотреть Kinopub в России - рабочий способ на сегодняшний день](content/posts/kak-smotret-kinopub-v-rossii-vpn.md)
 - [9 лучших бесплатных VPN для России в 2025 году: работают без сбоев](content/posts/best-free-vpn-russia-2025-nine.md)
