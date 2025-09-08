@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Топ лучших VPN-ботов Телеграм на сентябрь 2025 года](content/posts/top-vpn-bots-telegram-september-2025.md)
 - [Как смотреть Kinopub в России - рабочий способ на сегодняшний день](content/posts/kak-smotret-kinopub-v-rossii-vpn.md)
 - [9 лучших бесплатных VPN для России в 2025 году: работают без сбоев](content/posts/best-free-vpn-russia-2025-nine.md)
 - [Разблокируем Инстаграм в России правильно. Сразу для всех устройств](content/posts/razblokirovaem-instagram-v-rossii-pravilno.md)
