@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Как смотреть Kinopub в России - рабочий способ на сегодняшний день](content/posts/kak-smotret-kinopub-v-rossii-vpn.md)
 - [9 лучших бесплатных VPN для России в 2025 году: работают без сбоев](content/posts/best-free-vpn-russia-2025-nine.md)
 - [Разблокируем Инстаграм в России правильно. Сразу для всех устройств](content/posts/razblokirovaem-instagram-v-rossii-pravilno.md)
 - [VPN для всех устройств, который работает в России](content/posts/vpn-for-all-devices-in-russia.md)
