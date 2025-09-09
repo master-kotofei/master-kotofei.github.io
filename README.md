@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Как работают бесплатные VPN и насколько они безопасны](content/posts/free-vpn-security-risks.md)
 - [Не работают звонки в Telegram: причины и решения](content/posts/telegram-calls-not-working-solutions.md)
 - [Не работают звонки в WhatsApp: причины и способы решения проблемы](content/posts/whatsapp-calls-not-working-solutions.md)
 - [Топ лучших VPN-ботов Телеграм на сентябрь 2025 года](content/posts/top-vpn-bots-telegram-september-2025.md)
