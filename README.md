@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Как смотреть Ютуб в России: простые способы обхода блокировок](content/posts/how-to-watch-youtube-in-russia.md)
 - [Лучший VPN для Андроид на русском языке](content/posts/best-vpn-android-russian.md)
 - [Как настроить VPN на Android с приложениями и без них?](content/posts/android-vpn-setup-guide.md)
 - [Как работают бесплатные VPN и насколько они безопасны](content/posts/free-vpn-security-risks.md)
