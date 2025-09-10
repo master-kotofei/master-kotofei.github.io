@@ -1,4 +1,4 @@
-# VPN Guru Blog README
+# Security Russia Blog README
 
 ## Список постов
 
