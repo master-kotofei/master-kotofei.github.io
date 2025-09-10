@@ -1,6 +1,6 @@
-baseURL = "https://security-master.github.io"
+baseURL = "https://security-russia.github.io"
 languageCode = "ru"
-title = "Security Master"
+title = "Security Russia"
 theme = "vpn-guru-theme"
 
 # Настройки URL для более читаемых ссылок
@@ -49,7 +49,7 @@ theme = "vpn-guru-theme"
   TocOpen = false
   ShowBreadCrumbs = false
   ShowPostNavLinks = true
-  author = ["App Master"]
+  author = ["App Guru"]
   
   
   # Яндекс.Метрика ID
