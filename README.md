@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Хотите использовать ChatGPT в России? Вам потребуется надежный ВПН](content/posts/chatgpt-russia-vpn-access.md)
 - [Не работает Ютуб с ВПН на Windows? Вот как это исправить](content/posts/youtube-vpn-windows-fix.md)
 - [Не работает Ютуб с ВПН на iPhone? Вот как это исправить](content/posts/youtube-vpn-iphone-fix-guide.md)
 - [Не работает Ютуб с ВПН на Андроид? Вот как это исправить](content/posts/youtube-vpn-android-fix.md)
