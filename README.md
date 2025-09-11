@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Не работает Ютуб с ВПН на Windows? Вот как это исправить](content/posts/youtube-vpn-windows-fix.md)
 - [Не работает Ютуб с ВПН на iPhone? Вот как это исправить](content/posts/youtube-vpn-iphone-fix-guide.md)
 - [Не работает Ютуб с ВПН на Андроид? Вот как это исправить](content/posts/youtube-vpn-android-fix.md)
 - [Как смотреть Ютуб в России: простые способы обхода блокировок](content/posts/how-to-watch-youtube-in-russia.md)
