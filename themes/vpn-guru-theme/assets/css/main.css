@@ -2719,7 +2719,7 @@ a.card-link:hover {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #22c55e, #4ade80);
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
     transition: left 0.3s ease;
     z-index: -1;
 }
@@ -2727,9 +2727,9 @@ a.card-link:hover {
 .tag-link:hover {
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
-    border-color: #22c55e;
-    background: linear-gradient(135deg, rgba(34, 197, 94, 0.8) 0%, rgba(16, 185, 129, 0.6) 100%);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    border-color: #3b82f6;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.8) 0%, rgba(37, 99, 235, 0.6) 100%);
 }
 
 .tag-link:hover::before {
