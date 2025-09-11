@@ -2698,13 +2698,13 @@ a.card-link:hover {
 .tag-link {
 	display: inline-block;
 	padding: 0.2rem 0.4rem;
-	background: rgba(255, 255, 255, 0.7);
+	background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 197, 253, 0.05) 100%);
 	color: #475569;
 	text-decoration: none;
 	border-radius: 14px;
 	font-size: 0.65rem;
 	font-weight: 500;
-	border: 1px solid rgba(148, 163, 184, 0.2);
+	border: 1px solid rgba(59, 130, 246, 0.2);
 	transition: all 0.3s ease;
 	position: relative;
 	overflow: hidden;
@@ -2729,7 +2729,7 @@ a.card-link:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
     border-color: #22c55e;
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.8) 0%, rgba(16, 185, 129, 0.6) 100%);
 }
 
 .tag-link:hover::before {
