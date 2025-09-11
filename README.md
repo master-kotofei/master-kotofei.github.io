@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [HTTPUpgrade как современная замена WebSocket для VPN-приложений в России](content/posts/httpupgrade-websocket-vpn-russia.md)
 - [Хотите использовать ChatGPT в России? Вам потребуется надежный ВПН](content/posts/chatgpt-russia-vpn-access.md)
 - [Не работает Ютуб с ВПН на Windows? Вот как это исправить](content/posts/youtube-vpn-windows-fix.md)
 - [Не работает Ютуб с ВПН на iPhone? Вот как это исправить](content/posts/youtube-vpn-iphone-fix-guide.md)
