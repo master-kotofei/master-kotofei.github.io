@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [9 проверенных VPN для России: обзор работающих сервисов](content/posts/9-proven-vpn-services-russia-review.md)
 - [HTTPUpgrade как современная замена WebSocket для VPN-приложений в России](content/posts/httpupgrade-websocket-vpn-russia.md)
 - [Хотите использовать ChatGPT в России? Вам потребуется надежный ВПН](content/posts/chatgpt-russia-vpn-access.md)
 - [Не работает Ютуб с ВПН на Windows? Вот как это исправить](content/posts/youtube-vpn-windows-fix.md)
