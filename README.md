@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [В магазинах приложений слишком много фейковых VPN. На сцену выходят реально работающие VPN-боты в Telegram](content/posts/fake-vpn-apps-vs-telegram-bots.md)
 - [ВПН-боты в Телеграм доминируют над впн-приложениями в App Store](content/posts/vpn-bots-telegram-dominate-app-store.md)
 - [9 проверенных VPN для России: обзор работающих сервисов](content/posts/9-proven-vpn-services-russia-review.md)
 - [HTTPUpgrade как современная замена WebSocket для VPN-приложений в России](content/posts/httpupgrade-websocket-vpn-russia.md)
