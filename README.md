@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Партнерская программа X Rocket VPN: как получить дополнительные дни подписки бесплатно](content/posts/x-rocket-vpn-partner-program-free-days.md)
 - [РКН ужесточает правила игры, но и разработчики сервисов не стоят на месте](content/posts/rkn-vs-vpn-technology-race.md)
 - [Используем VPN на всех платформах: реально работающие способы в России](content/posts/vpn-na-vseh-platformah-rabotayushchie-sposoby-rossiya.md)
 - [iOS 26 ломает VPN-приложения на iPhone: почему Telegram-боты остаются надёжным решением](content/posts/ios-26-breaks-vpn-apps-telegram-bots-solution.md)
