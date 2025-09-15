@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Используем VPN на всех платформах: реально работающие способы в России](content/posts/vpn-na-vseh-platformah-rabotayushchie-sposoby-rossiya.md)
 - [iOS 26 ломает VPN-приложения на iPhone: почему Telegram-боты остаются надёжным решением](content/posts/ios-26-breaks-vpn-apps-telegram-bots-solution.md)
 - [В магазинах приложений слишком много фейковых VPN. На сцену выходят реально работающие VPN-боты в Telegram](content/posts/fake-vpn-apps-vs-telegram-bots.md)
 - [ВПН-боты в Телеграм доминируют над впн-приложениями в App Store](content/posts/vpn-bots-telegram-dominate-app-store.md)
