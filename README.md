@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [РКН ужесточает правила игры, но и разработчики сервисов не стоят на месте](content/posts/rkn-vs-vpn-technology-race.md)
 - [Используем VPN на всех платформах: реально работающие способы в России](content/posts/vpn-na-vseh-platformah-rabotayushchie-sposoby-rossiya.md)
 - [iOS 26 ломает VPN-приложения на iPhone: почему Telegram-боты остаются надёжным решением](content/posts/ios-26-breaks-vpn-apps-telegram-bots-solution.md)
 - [В магазинах приложений слишком много фейковых VPN. На сцену выходят реально работающие VPN-боты в Telegram](content/posts/fake-vpn-apps-vs-telegram-bots.md)
