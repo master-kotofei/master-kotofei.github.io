@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Хватит платить большие деньги за неработающие ВПН. X Rocket VPN - это Телеграм-бот, который за скромные деньги реально работает в России](content/posts/cheap-working-vpn-telegram-bot-russia.md)
 - [X Rocket VPN решает проблемы с работой VPN в России для всех платформ](content/posts/x-rocket-vpn-universal-solution-russia.md)
 - [Почему 90% VPN не работают в России: проблема WebSocket и её решение](content/posts/websocket-vpn-blocking-russia-solutions.md)
 - [Партнерская программа X Rocket VPN: как получить дополнительные дни подписки бесплатно](content/posts/x-rocket-vpn-partner-program-free-days.md)
