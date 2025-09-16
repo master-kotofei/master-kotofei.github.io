@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Почему 90% VPN не работают в России: проблема WebSocket и её решение](content/posts/websocket-vpn-blocking-russia-solutions.md)
 - [Партнерская программа X Rocket VPN: как получить дополнительные дни подписки бесплатно](content/posts/x-rocket-vpn-partner-program-free-days.md)
 - [РКН ужесточает правила игры, но и разработчики сервисов не стоят на месте](content/posts/rkn-vs-vpn-technology-race.md)
 - [Используем VPN на всех платформах: реально работающие способы в России](content/posts/vpn-na-vseh-platformah-rabotayushchie-sposoby-rossiya.md)
