@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [VPN в России: почему виртуальная частная сеть стала жизненной необходимостью](content/posts/vpn-essential-russia-necessity-guide.md)
 - [ТОП 5 работающих VPN-ботов Telegram в России на сентябрь 2025 года](content/posts/top-5-vpn-bots-telegram-russia-september-2025.md)
 - [Хватит платить большие деньги за неработающие ВПН. X Rocket VPN - это Телеграм-бот, который за скромные деньги реально работает в России](content/posts/cheap-working-vpn-telegram-bot-russia.md)
 - [X Rocket VPN решает проблемы с работой VPN в России для всех платформ](content/posts/x-rocket-vpn-universal-solution-russia.md)
