@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Как смотреть YouTube в России через реально работающий VPN](content/posts/youtube-vpn-russia-access.md)
 - [ТОП 7 современных VPN для Windows на Сентябрь 2025 года в России](content/posts/top-7-vpn-windows-russia-september-2025.md)
 - [VPN в России: почему виртуальная частная сеть стала жизненной необходимостью](content/posts/vpn-essential-russia-necessity-guide.md)
 - [ТОП 5 работающих VPN-ботов Telegram в России на сентябрь 2025 года](content/posts/top-5-vpn-bots-telegram-russia-september-2025.md)
