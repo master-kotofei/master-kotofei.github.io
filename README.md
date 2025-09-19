@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Как смотреть YouTube в России через надежный VPN — актуальные данные](content/posts/kak-smotret-youtube-v-rossii-cherez-vpn.md)
 - [Как использовать Инстаграм в России через надежный VPN: Сентябрь 2025 года](content/posts/instagram-russia-vpn-september-2025.md)
 - [Как смотреть YouTube в России через реально работающий VPN](content/posts/youtube-vpn-russia-access.md)
 - [ТОП 7 современных VPN для Windows на Сентябрь 2025 года в России](content/posts/top-7-vpn-windows-russia-september-2025.md)
