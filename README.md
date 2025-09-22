@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Почему не стоит использовать VPN с устаревшими протоколами](content/posts/vpn-outdated-protocols-security-risks.md)
 - [ТОП 5 VPN-ботов в Телеграм: обзор и сравнение](content/posts/top-5-vpn-botov-telegram-obzor-sravnenie.md)
 - [Надежный ВПН для Windows - реально работает в России](content/posts/reliable-vpn-windows-russia-works.md)
 - [Как смотреть YouTube в России через надежный VPN — актуальные данные](content/posts/kak-smotret-youtube-v-rossii-cherez-vpn.md)
