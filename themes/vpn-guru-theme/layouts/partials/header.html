@@ -1,7 +1,7 @@
 <header class="site-header">
     <div class="site-branding">
         <a href="{{ .Site.BaseURL }}" class="site-title-link">
-            <h1 class="site-title">{{ .Site.Title }}</h1>
+            <h1 class="site-title">{{ .Site.Title | replaceRE "😸" "<span class=\"emoji\">😸</span>" | safeHTML }}</h1>
         </a>
         <p class="site-subtitle">{{ .Site.Params.subtitle }}</p>
     </div>

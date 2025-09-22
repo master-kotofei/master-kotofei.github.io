@@ -490,6 +490,15 @@ a.card-link:hover {
     text-shadow: 0 2px 4px rgba(25, 118, 210, 0.1);
 }
 
+/* Ensure emojis in site title are colored */
+.site-title .emoji {
+    color: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background: none !important;
+    background-clip: initial !important;
+    -webkit-background-clip: initial !important;
+}
+
 .site-subtitle {
     font-size: 1rem;
     color: #64748b;
@@ -1430,6 +1439,13 @@ a.card-link:hover {
     background: none !important;
 }
 
+/* Ensure emojis in post cards are colored */
+.post-title emoji {
+    color: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background: none !important;
+}
+
 .post-header .post-meta {
     margin-bottom: 0;
     display: flex;
@@ -1524,6 +1540,42 @@ a.card-link:hover {
 
 .reading-time-icon {
     font-size: 0.9rem;
+}
+
+/* Ensure emojis in reading time icon are colored */
+.reading-time-icon emoji {
+    color: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background: none !important;
+}
+
+/* Ensure emojis in category links are colored */
+.category-link emoji,
+.category-name emoji {
+    color: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background: none !important;
+}
+
+/* Ensure emojis in tag links are colored */
+.tag-link emoji {
+    color: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background: none !important;
+}
+
+/* Ensure emojis in post excerpts are colored */
+.post-excerpt emoji {
+    color: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background: none !important;
+}
+
+/* Ensure emojis in post cards are colored (global rule) */
+.post-card emoji {
+    color: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background: none !important;
 }
 
 .reading-time-small {
