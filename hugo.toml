@@ -1,6 +1,6 @@
-baseURL = "https://security-russia.github.io"
+baseURL = "https://master-kotofei.github.io"
 languageCode = "ru"
-title = "Security Russia"
+title = "Мастер Котофей 😸"
 theme = "vpn-guru-theme"
 
 # Настройки URL для более читаемых ссылок
@@ -41,7 +41,7 @@ theme = "vpn-guru-theme"
 
 # Отключаем автоматическую генерацию карты сайта для таксономий
 [params]
-  subtitle = 'Лучший блог о сервисах и приложениях'
+  subtitle = 'Лучший блог о сервисах и котиках'
   ShowShareButtons = true
   ShowReadingTime = true
   ShowWordCount = false
