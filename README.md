@@ -2,6 +2,7 @@
 
 ## Список постов
 
+- [Цензура в Интернете — это современная реальность!](content/posts/internet-censorship-modern-reality.md)
 - [Почему не стоит использовать VPN с устаревшими протоколами](content/posts/vpn-outdated-protocols-security-risks.md)
 - [ТОП 5 VPN-ботов в Телеграм: обзор и сравнение](content/posts/top-5-vpn-botov-telegram-obzor-sravnenie.md)
 - [Надежный ВПН для Windows - реально работает в России](content/posts/reliable-vpn-windows-russia-works.md)
