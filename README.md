@@ -1,6 +1,7 @@
 # Blog README
 
 ## Список постов
+- [Универсальный VPN-бот в Телеграм для iPhone: простое решение для безопасного интернета](content/posts/universal-vpn-telegram-bot-iphone.md)
 - [Универсальный впн-бот в Телеграм для Андроид](content/posts/universal-vpn-bot-telegram-android.md)
 - [X Rocket VPN по-прежнему демонстрирует отличную работоспособность в современных условиях](content/posts/x-rocket-vpn-stable-performance-modern-conditions.md)
 - [Интернет-цензура: Новая реальность цифрового мира](content/posts/internet-censorship-modern-reality.md)
