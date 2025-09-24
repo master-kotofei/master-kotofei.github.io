@@ -1,6 +1,7 @@
 # Blog README
 
 ## Список постов
+- [VPN и цензура: стратегии обхода блокировок в 2025 году](content/posts/vpn-censorship-bypass-strategies-2025.md)
 - [Будущее VPN: от классических протоколов к Zero Trust](content/posts/vpn-future-zero-trust-protocols.md)
 - [Универсальный VPN-бот в Телеграм для iPhone: простое решение для безопасного интернета](content/posts/universal-vpn-telegram-bot-iphone.md)
 - [Универсальный впн-бот в Телеграм для Андроид](content/posts/universal-vpn-bot-telegram-android.md)
