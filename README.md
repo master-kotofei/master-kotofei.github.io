@@ -1,6 +1,7 @@
 # Blog README
 
 ## Список постов
+- [VPN для разработчиков: как самому построить сервис](content/posts/vpn-for-developers-build-own-service.md)
 - [DNS через VPN: как правильно фильтровать рекламу и трекеры](content/posts/dns-vpn-ad-blocking-guide.md)
 - [VPN и цензура: стратегии обхода блокировок в 2025 году](content/posts/vpn-censorship-bypass-strategies-2025.md)
 - [Будущее VPN: от классических протоколов к Zero Trust](content/posts/vpn-future-zero-trust-protocols.md)
