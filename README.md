@@ -1,6 +1,7 @@
 # Blog README
 
 ## Список постов
+- [VPN-боты в Telegram: будущее удобного и безопасного доступа к интернету](content/posts/vpn-bots-telegram-future-secure-internet.md)
 - [VPN для разработчиков: как самому построить сервис](content/posts/vpn-for-developers-build-own-service.md)
 - [DNS через VPN: как правильно фильтровать рекламу и трекеры](content/posts/dns-vpn-ad-blocking-guide.md)
 - [VPN и цензура: стратегии обхода блокировок в 2025 году](content/posts/vpn-censorship-bypass-strategies-2025.md)
