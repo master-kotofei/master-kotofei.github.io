@@ -1,6 +1,7 @@
 # Blog README
 
 ## Список постов
+- [VPN через Telegram-бота: архитектура и технические особенности](content/posts/vpn-telegram-bot-architecture.md)
 - [VPN-боты в Telegram: будущее удобного и безопасного доступа к интернету](content/posts/vpn-bots-telegram-future-secure-internet.md)
 - [VPN для разработчиков: как самому построить сервис](content/posts/vpn-for-developers-build-own-service.md)
 - [DNS через VPN: как правильно фильтровать рекламу и трекеры](content/posts/dns-vpn-ad-blocking-guide.md)
