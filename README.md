@@ -1,6 +1,7 @@
 # Blog README
 
 ## Список постов
+- [ТОП 3 новых бота в Телеграм для ВПН. Работают в настоящее время](content/posts/top-3-telegram-vpn-bots-2025-09.md)
 - [Telegram VPN-боты: новая парадигма доступа к интернету и их преимущества перед классическими приложениями](content/posts/telegram-vpn-bots-new-paradigm.md)
 - [VPN через Telegram-бота: архитектура и технические особенности](content/posts/vpn-telegram-bot-architecture.md)
 - [VPN-боты в Telegram: будущее удобного и безопасного доступа к интернету](content/posts/vpn-bots-telegram-future-secure-internet.md)
